@@ -1,0 +1,59 @@
+{include file="common/head"/}
+<link href="/style/css/goods.css" rel="stylesheet">
+<div id="goods_list">
+	<section class="goods_banner"></section>
+	<div class="w1200">
+		<div class="goods_list_menu">
+			<div class="goods_category">
+				<div class="goods_category">
+					<div class="mt"><p>案例类型</p></div>
+					<nav class="mc clearfix">
+						
+					{volist name="cates" id="v"}
+						<a href="/home/case/index/catId/{$v.id}.html" title="{$v.catname}">{$v.catname}</a>
+                    {/volist}
+					</nav>
+				</div>
+
+				<div class="mt"><p>案例分类</p></div>
+				<nav class="mc clearfix">
+					{volist name="sub_cates" id="r"}
+						<a href="/home/case/index/catId/{$r.id}.html" title="{$r.catname}">{$r.catname}</a>
+                    {/volist}
+					
+					
+				</nav>
+			</div>
+
+			<div class="goods_tag">
+				<div class="mt"><p>热门标签</p></div>
+				<nav class="mc clearfix">
+						<a href="search.php?keywords=标签1">标签1</a>
+						<a href="search.php?keywords=旅游风景">旅游风景</a>
+				</nav>
+			</div>
+		</div>
+
+		<ul class="goods_list">
+			
+		{volist name="$list" id="vo"}
+        <li>
+		  <div class="img_box">
+		    <img src="/public{$vo.thumb}" alt="{$vo.title}">
+		  </div>
+		  <div class="case_info">
+		    <p class="title">{$vo.title}</p>
+		    <p class="label"><span>服务行业</span>{$vo.jigou}</p>
+		  </div>
+		  <div class="case_action">
+		    <a href="{:url('home/'.$vo['controller'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}" class="go_inside">查看价格</a>
+		    <a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian.cn&menu=yes" class="go_plan">方案策划</a>
+		  </div>
+		</li>
+        {/volist}	
+
+</ul>
+{$page}
+</div>
+</div>
+{include file="common/footer"/}

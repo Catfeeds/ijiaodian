@@ -1,0 +1,128 @@
+{include file="common/head"/}
+<link href="/style/css/goods.css" rel="stylesheet">
+<div id="goods">
+  <section class="goods_banner"></section>
+  <div class="w1200 clearfix">
+    <div class="goods_left">
+      <div class="goods_main_box bg_white">
+        <article>
+          <h2>{$info.title}</h2>
+          <time class="upload_time">上传时间：{$info.createtime|date='Y-m-d',###}</time>
+          <aside>
+            
+            <div class="goods_information clearfix">
+              <p><span>服务行业：</span>{$info.hangye}</p>
+              <p><span>项目周期：</span>{$info.day}</p>
+              <p><span>参与人数：</span>{$info.renshu}</p>
+              <p><span>项目费用：</span>￥{$info.price}</p>
+            </div>
+            <p class="goods_desc">
+            	{$info.content}
+            </p>
+          </aside>
+          <div class="goods_main">
+			{volist name="$info['pics']" id="vo"}
+			<p style="text-align:center;">
+				<img src="/public{$vo}" alt="" />
+			</p>
+			{/volist}
+          </div>
+        </article>
+        <div class="goods_action">
+          <a href="{$info.url}" class="action_see" target="_blank"><i></i></a>
+<!--<a onclick="javascript:collect(362)" class="action_collection "><i></i></a>-->
+        </div>
+      </div>
+      
+<!--<div class="goods_reply_box bg_white">
+  <div class="mt">发表评论</div>
+  <div class="mc">
+        <form action="javascript:;" onsubmit="submitComment(this)" method="post" name="commentForm" id="commentForm">
+      <textarea name="content" class="inputBorder"></textarea>
+      <input type="hidden" name="email" id="email" value="0" enable/>
+      <input type="hidden" name="comment_rank" value="5" enable/>
+      <input type="hidden" name="cmt_type" value="0" />
+      <input type="hidden" name="id" value="362" />
+      <div class="reply_action clearfix">
+        <div class="captcha_left">验证码：
+          <input type="text" name="captcha" id="reply_captcha" class="inputCaptcha"/>
+          <img src="picture/captcha.php" alt="captcha" onClick="this.src='captcha.php?'+Math.random()" class="captcha">
+        </div>
+        <div class="captcha_right">
+          <input type="submit" class="comment_btns" value="提交评论">
+        </div>
+        </div>
+    </form>
+      </div>
+</div>-->
+
+    </div>
+    <div class="goods_right">
+      <section class="adviser bg_white">
+        <div class="mt">策划顾问</div>
+        <div class="mc">
+          <div class="adviser_img">
+            <img src="/style/picture/1487814038271611651.jpg">
+            <p>应洁<span>项目策划</span></p>
+          </div>
+          <div class="adviser_action">
+                        <a onclick="javascript:alert('暂不对外开放')" class="look_phone">查看手机</a>
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian.cn&menu=yes" target="_blank">立即咨询</a>
+          </div>
+        </div>
+      </section>
+      <section class="call_me bg_white">
+        <!--<form action="" class="call_me bg_white" method="post">
+        	
+        	
+          
+          <input type="button" class="comment_btns" id="lianxi" value="联系我">
+          <input type="hidden" name="cehua" class="cehua" value="应洁" />
+
+        </form>-->
+        <form class="clearfix">
+          <input name="" type="text" placeholder="请输入您的手机号码！~" class="call_me_phone">
+          <input type="button" class="comment_btns" id="lianxi" value="联系我">
+          <input type="hidden" name="cehua" class="cehua" value="应洁" />
+        </form> 
+      </section>
+      <script>
+    $('#lianxi').click(function(){
+        var phone = $('.call_me_phone').val();
+        var cehua = $('.cehua').val();
+        if($.trim(phone)==''){
+            alert('手机号码不能为空');
+            return false;
+        }
+        $.post("{:url('/home/index/callMe')}",{tel:phone,cehua:cehua},function(data){
+            if(data.status==1){
+                alert('留言成功！将会尽快给你回复！');
+                location.reload();
+            }else{
+                alert('留言失败！重新提交试试！');
+            }
+        })
+    })
+</script>
+      <section class="case">
+        <div class="mt bg_white">
+        	最新案例
+        </div>
+        <div class="mc" id="customer_box">
+        	{clt:list_join db='case' dbfield='catid' id='vo' joindb='category' joinfield='id' where="posid = 1 or posid=2" order="listorder asc,createtime desc" limit='8'}
+        	
+        	<article class="bg_white append_box">
+            <div class="img_box">
+              <img src="/public{$vo.thumb}">
+            </div>
+            <p class="title"><a href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}">{$vo.title}</a></p>
+            <p class="tap">服务行业：{$vo.hangye}
+            </p>
+        	</article>
+            {/clt:list_join}
+            </div>
+      </section>
+    </div>
+  </div>
+</div>
+{include file="common/footer"/}

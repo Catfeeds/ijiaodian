@@ -1,0 +1,77 @@
+{include file="common/head"/}
+<link href="/style/css/article.css" rel="stylesheet">
+<div id="article">
+	<section class="goods_banner"></section>
+	<div class="infoBox w1200 clearfix">
+		<div class="col1">
+			<div class="mt">
+				<p>{$info.title}
+					<span>发布时间：{:toDate($info['createtime'],'Y-m-d')}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					文章来源： <a href="/about/2.html" target="_blank">重庆焦点科技网络有限公司</a></span>
+				</p>
+			</div>
+			<div class="mc">
+				{$info.content}
+
+			</div>
+		</div>
+		<div class="col2">
+			<div class="article_list">
+				<div class="mt">优选文章</div>
+				<ul class="mc">
+					<li><a href="article.php?id=66">关于杭州市网站公安备案公告</a></li>
+					<li><a href="article.php?id=71">“杭州浪浪浪水公园”体验一夏</a></li>
+					<li><a href="article.php?id=70">建德采大洋枇杷、赏三江美景、捕江中鱼鲜</a></li>
+					<li><a href="article.php?id=69">秀山美地农庄一日游</a></li>
+					<li><a href="article.php?id=68">2016年会之《开创好声音》</a></li>
+				</ul>
+			</div>
+			<div class="pro_list">
+				<div class="mt">优选案例</div>
+				<ul class="mc">
+					<li>
+						<a href="goods.php?id=288" target="_blank">
+							<div class="img_box">
+								<img src="picture/288_thumb_g_1490037271002.jpg"/>
+							</div>
+							<p class="title">北京宏天信业</p>
+						</a>
+					</li>
+					<li>
+						<a href="goods.php?id=294" target="_blank">
+							<div class="img_box">
+								<img src="picture/294_thumb_g_1490045373528.jpg"/>
+							</div>
+							<p class="title">精博康复辅具</p>
+						</a>
+					</li>
+					<li>
+						<a href="goods.php?id=292" target="_blank">
+							<div class="img_box">
+								<img src="picture/292_thumb_g_1490043625074.jpg"/>
+							</div>
+							<p class="title">南宇装饰工程</p>
+						</a>
+					</li>
+					<li>
+						<a href="goods.php?id=300" target="_blank">
+							<div class="img_box">
+								<img src="picture/300_thumb_g_1490129933981.jpg"/>
+							</div>
+							<p class="title">魅颜文化艺术</p>
+						</a>
+					</li>
+					<li>
+						<a href="goods.php?id=298" target="_blank">
+							<div class="img_box">
+								<img src="picture/298_thumb_g_1490058443168.jpg"/>
+							</div>
+							<p class="title">香道插花培训</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{include file="common/footer"/}

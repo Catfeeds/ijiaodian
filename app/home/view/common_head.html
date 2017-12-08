@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="zh-cn"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="zh-cn"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-cn"> <!--<![endif]-->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="keywords" content="">
+		<meta name="author" content="{$sys.key}" />
+		<meta name="description" content="{$sys.des}">
+		
+		<meta name="renderer" content="webkit">
+		
+		<meta http-equiv="Cache-Control" content="no-siteapp"/>
+		<link rel="icon" type="image/png" href="themes/sake/images/favicon.ico">
+		
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="128x128" href="themes/sake/images/favicon.ico">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="{$sys.title}"/>
+		<link rel="apple-touch-icon-precomposed" href="themes/sake/images/favicon.ico">
+		
+		<meta name="msapplication-TileImage" content="themes/sake/images/favicon.ico">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+		<title>{$sys.name}</title>
+		<link href="/style/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/style/css/style.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+		<script src="/style/js/html5shiv.min.js"></script>
+		<script src="/style/js/respond.min.js"></script>
+		<![endif]-->
+		
+		
+		<script src="/style/js/jquery.min.js"></script>
+		
+	</head>
+<body>
+<div id="header">
+	<!--<header>
+		<div  class="w1200 clearfix">
+			<p class="welcome">
+				<i></i>官方微信
+			</p>
+			  <div class="user_info"><a href="/user.php"><i><img src="/style/picture/portrait.png"></i>13286007627</a><a href="user.php?act=logout" class="link-logout">[退出]</a></div>
+		</div>
+	</header>-->
+	<div class="w1200 clearfix">
+		<h1 class="logo">
+			<a href="/"><img src="/style/picture/logo.png" alt="{$sys.key}">{$sys.key}</a>
+		</h1>
+		<div class="pull-right">
+			<p class="tel">{$sys.tel}</p>
+			<nav class="index_menu">
+				<a href="/" class="active" >首页</a>
+				
+				{volist name="category" id="vo"}
+                <a href="{:url('home/'.$vo['catdir'].'/index',['catId'=>$vo['id']] )}" title="{$vo.catname}"  {if condition="$controller eq $vo['catdir']"}class="active"{/if}>{$vo.catname}</a>
+                {/volist}
+                
+				<!--<a href="case.php"  >案例 </a>
+				
+				<a href="service.php"  >服务 </a>
+				<a href="about.php"  target="_blank" >介绍</a>
+				<a href="contact.php"  >联系</a>-->
+				
+			</nav>
+		</div>
+	</div>
+</div>

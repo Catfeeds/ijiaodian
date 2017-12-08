@@ -1,0 +1,1299 @@
+---------------------------------------------------------------
+[ 2017-12-05T01:50:56+08:00 ] 120.27.142.77 140.205.201.6 GET /
+[ info ] www.ijiaodian.cn/ [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,049.82kb] [文件加载：53]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'accept-language' => 'en-US,*',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 8.0; Trident/4.0; Windows NT 6.1; SLCC2 2.5.5231; .NET CLR 2.0.50727; .NET CLR 4.1.23457; .NET CLR 4.0.23457; Media Center PC 6.0; MS-WK 8)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 0  AND `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_ad` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_ad` WHERE  `type_id` = 1  AND `open` = 1 ORDER BY sort asc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_link` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_link` WHERE  `open` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T08:01:09+08:00 ] 120.27.142.77 106.11.225.91 GET /
+[ info ] www.ijiaodian.cn/ [运行时间：0.296873s][吞吐率：3.37req/s] [内存消耗：2,049.78kb] [文件加载：53]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'www.ijiaodian.cn',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.046875s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 0  AND `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_ad` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_ad` WHERE  `type_id` = 1  AND `open` = 1 ORDER BY sort asc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_link` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_link` WHERE  `open` = 1 ORDER BY sort asc [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T08:43:07+08:00 ] 120.27.142.77 183.230.157.81 GET /favicon.ico
+[ info ] www.ijiaodian.cn/favicon.ico [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,032.27kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=149586096.2526427638539527700.1512350949149.5723; UM_distinctid=1601f2429c80-010c3b29d82bee-6b1b1279-1aeaa0-1601f2429c917a; monitor_count=30; CNZZDATA1262639474=708353359-1512351260-%7C1512368657',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T08:46:28+08:00 ] 120.27.142.77 14.17.3.65 GET /
+[ info ] www.ijiaodian.cn/ [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,029.20kb] [文件加载：52]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'www.ijiaodian.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T08:46:38+08:00 ] 120.27.142.77 120.204.17.68 GET /
+[ info ] www.ijiaodian.cn/ [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,028.73kb] [文件加载：52]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T08:47:59+08:00 ] 120.27.142.77 221.217.49.38 GET /
+[ info ] www.ijiaodian.cn/ [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：2,029.17kb] [文件加载：52]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.046875s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T08:48:15+08:00 ] 120.27.142.77 221.217.49.38 GET /themes/sake/images/favicon.ico
+[ info ] www.ijiaodian.cn/themes/sake/images/favicon.ico [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,032.69kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'themes',
+    1 => 'sake',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1602424da2e54b-0674830aa537ee-6b1b1279-15f900-1602424da2f3dc; CNZZDATA1262639474=279145625-1512434881-%7C1512434881',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://www.ijiaodian.cn/',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:22+08:00 ] 120.27.142.77 61.190.171.130 POST /
+[ info ] www.ijiaodian.cn/ [运行时间：0.078124s][吞吐率：12.80req/s] [内存消耗：2,049.79kb] [文件加载：53]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 0  AND `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_ad` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_ad` WHERE  `type_id` = 1  AND `open` = 1 ORDER BY sort asc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_link` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_link` WHERE  `open` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T12:25:24+08:00 ] 120.27.142.77 61.190.171.130 POST /
+[ info ] www.ijiaodian.cn/ [运行时间：0.046874s][吞吐率：21.33req/s] [内存消耗：2,029.30kb] [文件加载：52]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015624s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T12:25:25+08:00 ] 120.27.142.77 61.190.171.130 POST /home/case/index/catId/4.html
+[ info ] www.ijiaodian.cn/home/case/index/catId/4.html [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,147.13kb] [文件加载：55]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ D:\wwwroot\gw\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\case_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'list',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 4 ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T12:25:26+08:00 ] 120.27.142.77 61.190.171.130 POST /home/service/index/catId/9.html
+[ info ] www.ijiaodian.cn/home/service/index/catId/9.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,075.13kb] [文件加载：55]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ D:\wwwroot\gw\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\page_show_service.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_page` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_page` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `template_show` FROM `clt_category` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: template[D:\wwwroot\gw\app\home\controller\EmptyController.php:18]
+---------------------------------------------------------------
+[ 2017-12-05T12:25:27+08:00 ] 120.27.142.77 61.190.171.130 POST /about/2.html
+[ info ] www.ijiaodian.cn/about/2.html [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,078.15kb] [文件加载：55]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'about',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ D:\wwwroot\gw\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\page_show_about.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_page` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_page` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `template_show` FROM `clt_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: template[D:\wwwroot\gw\app\home\controller\EmptyController.php:18]
+---------------------------------------------------------------
+[ 2017-12-05T12:25:27+08:00 ] 120.27.142.77 61.190.171.130 POST /contact/8.html
+[ info ] www.ijiaodian.cn/contact/8.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,076.65kb] [文件加载：55]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'contact',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '8',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ D:\wwwroot\gw\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\page_show_contace.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_page` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_page` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `template_show` FROM `clt_category` WHERE  `id` = 8 LIMIT 1 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: template[D:\wwwroot\gw\app\home\controller\EmptyController.php:18]
+---------------------------------------------------------------
+[ 2017-12-05T12:25:28+08:00 ] 120.27.142.77 61.190.171.130 POST /sanhangholding.com
+[ info ] www.ijiaodian.cn/sanhangholding.com [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.73kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sanhangholding.com',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:28+08:00 ] 120.27.142.77 61.190.171.130 GET /sanhangholding.com
+[ info ] www.ijiaodian.cn/sanhangholding.com [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.23kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sanhangholding.com',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:29+08:00 ] 120.27.142.77 61.190.171.130 POST /home/case/info/id/2/catId/4.html
+[ info ] www.ijiaodian.cn/home/case/info/id/2/catId/4.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,093.34kb] [文件加载：55]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+  'catId' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ D:\wwwroot\gw\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\case_show.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `clt_case`  SET `hits`=hits+1  WHERE  `id` = 2 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_case` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `template_show` FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  (  posid = 1 or posid=2 ) ORDER BY listorder asc,createtime desc LIMIT 8 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: pic[D:\wwwroot\gw\app\home\controller\EmptyController.php:92]
+[ error ] [8]Use of undefined constant __HOME__ - assumed '__HOME__'[D:\wwwroot\gw\app\home\controller\EmptyController.php:92]
+---------------------------------------------------------------
+[ 2017-12-05T12:25:30+08:00 ] 120.27.142.77 61.190.171.130 POST /home/case/info/id/1/catId/4.html
+[ info ] www.ijiaodian.cn/home/case/info/id/1/catId/4.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,093.02kb] [文件加载：55]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+  'catId' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ D:\wwwroot\gw\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\case_show.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `clt_case`  SET `hits`=hits+1  WHERE  `id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_case` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `template_show` FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  (  posid = 1 or posid=2 ) ORDER BY listorder asc,createtime desc LIMIT 8 [ RunTime:0.000000s ]
+[ error ] [8]未定义数组索引: pic[D:\wwwroot\gw\app\home\controller\EmptyController.php:92]
+[ error ] [8]Use of undefined constant __HOME__ - assumed '__HOME__'[D:\wwwroot\gw\app\home\controller\EmptyController.php:92]
+---------------------------------------------------------------
+[ 2017-12-05T12:25:30+08:00 ] 120.27.142.77 61.190.171.130 POST /service.php
+[ info ] www.ijiaodian.cn/service.php [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.91kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'service.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:30+08:00 ] 120.27.142.77 61.190.171.130 GET /service.php
+[ info ] www.ijiaodian.cn/service.php [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.16kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'service.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:31+08:00 ] 120.27.142.77 61.190.171.130 POST /category.php?id=219
+[ info ] www.ijiaodian.cn/category.php?id=219 [运行时间：0.015624s][吞吐率：64.00req/s] [内存消耗：1,032.05kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'category.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '219',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:31+08:00 ] 120.27.142.77 61.190.171.130 GET /category.php?id=219
+[ info ] www.ijiaodian.cn/category.php?id=219 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.39kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'category.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '219',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:34+08:00 ] 120.27.142.77 61.190.171.130 POST /search.php
+[ info ] www.ijiaodian.cn/search.php [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.91kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'search.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:35+08:00 ] 120.27.142.77 61.190.171.130 GET /search.php
+[ info ] www.ijiaodian.cn/search.php [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.02kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'search.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:35+08:00 ] 120.27.142.77 61.190.171.130 POST /category.php?id=220
+[ info ] www.ijiaodian.cn/category.php?id=220 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.88kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'category.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '220',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:35+08:00 ] 120.27.142.77 61.190.171.130 GET /category.php?id=220
+[ info ] www.ijiaodian.cn/category.php?id=220 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.29kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'category.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '220',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:36+08:00 ] 120.27.142.77 61.190.171.130 POST /category.php?id=234
+[ info ] www.ijiaodian.cn/category.php?id=234 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,032.05kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'category.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '234',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:36+08:00 ] 120.27.142.77 61.190.171.130 GET /category.php?id=234
+[ info ] www.ijiaodian.cn/category.php?id=234 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.39kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'category.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '234',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:52+08:00 ] 120.27.142.77 61.190.171.130 POST /about/index.php
+[ info ] www.ijiaodian.cn/about/index.php [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,031.80kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'about',
+    1 => 'index.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:53+08:00 ] 120.27.142.77 61.190.171.130 GET /about/index.php
+[ info ] www.ijiaodian.cn/about/index.php [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.27kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'about',
+    1 => 'index.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:53+08:00 ] 120.27.142.77 61.190.171.130 POST /article.php?id=66
+[ info ] www.ijiaodian.cn/article.php?id=66 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.87kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'article.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '66',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:53+08:00 ] 120.27.142.77 61.190.171.130 GET /article.php?id=66
+[ info ] www.ijiaodian.cn/article.php?id=66 [运行时间：0.015624s][吞吐率：64.00req/s] [内存消耗：1,031.27kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'article.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '66',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:53+08:00 ] 120.27.142.77 61.190.171.130 POST /article.php?id=68
+[ info ] www.ijiaodian.cn/article.php?id=68 [运行时间：0.015624s][吞吐率：64.00req/s] [内存消耗：1,031.87kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'article.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '68',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:53+08:00 ] 120.27.142.77 61.190.171.130 GET /article.php?id=68
+[ info ] www.ijiaodian.cn/article.php?id=68 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.39kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'article.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '68',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:53+08:00 ] 120.27.142.77 61.190.171.130 POST /article.php?id=70
+[ info ] www.ijiaodian.cn/article.php?id=70 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,032.05kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'article.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip,deflate',
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '70',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T12:25:54+08:00 ] 120.27.142.77 61.190.171.130 GET /article.php?id=70
+[ info ] www.ijiaodian.cn/article.php?id=70 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,031.39kb] [文件加载：33]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'article.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.ijiaodian.cn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'close',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+  'id' => '70',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-05T14:02:39+08:00 ] 120.27.142.77 202.108.211.56 GET /
+[ info ] www.ijiaodian.cn/ [运行时间：0.046876s][吞吐率：21.33req/s] [内存消耗：2,050.22kb] [文件加载：53]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'www.ijiaodian.cn',
+  'upgrade-insecure-requests' => '1',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 0  AND `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_ad` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_ad` WHERE  `type_id` = 1  AND `open` = 1 ORDER BY sort asc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_link` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_link` WHERE  `open` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T15:46:52+08:00 ] 120.27.142.77 42.236.10.78 GET /
+[ info ] www.ijiaodian.cn/ [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,049.75kb] [文件加载：53]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.4.2661.102 Safari/537.36; 360Spider',
+  'connection' => 'close',
+  'accept-language' => 'zh-CN',
+  'accept' => '*/*',
+  'cookie' => '',
+  'referer' => 'http://www.ijiaodian.cn/',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'www.ijiaodian.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 0  AND `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_ad` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_ad` WHERE  `type_id` = 1  AND `open` = 1 ORDER BY sort asc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_link` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_link` WHERE  `open` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2017-12-05T19:44:30+08:00 ] 120.27.142.77 183.136.190.62 GET /
+[ info ] www.ijiaodian.cn/ [运行时间：0.046874s][吞吐率：21.33req/s] [内存消耗：2,049.74kb] [文件加载：53]
+[ info ] [ LANG ] D:\wwwroot\gw\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36',
+  'host' => 'www.ijiaodian.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\wwwroot\gw\app\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\wwwroot\gw/app/home\view\index_index.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 0  AND `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `ismenu` = 1 ORDER BY `listorder` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_ad` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_ad` WHERE  `type_id` = 1  AND `open` = 1 ORDER BY sort asc LIMIT 4 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_link` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_link` WHERE  `open` = 1 ORDER BY sort asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.015624s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` ORDER BY listorder asc,createtime desc LIMIT 12 [ RunTime:0.000000s ]

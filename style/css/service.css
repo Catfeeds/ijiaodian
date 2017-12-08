@@ -1,0 +1,161 @@
+﻿#service{
+	background:#e9e9eb;
+}
+#service .service_banner{
+	background:url(../images/service_banner.jpg) no-repeat center center;
+	height:139px;
+	margin-bottom:60px;
+}
+#service .page{
+	padding-bottom:82px;
+}
+#service .page .top{
+	height:360px;
+	overflow:hidden;
+}
+#service .page .top .left{
+	float:left;
+	width:600px;
+	background:#f6f6f7;
+	height:100%;
+	overflow:hidden;
+	padding:56px 36px;
+}
+#service .page .top .right{
+	float:right;
+	width:600px;
+	background:#fff;
+	height:100%;
+	overflow:hidden;	
+	padding:63px 52px;
+}
+#service .page3 .top .right{
+	background:url(../images/services_right_web.jpg) no-repeat center center #fff;
+}
+#service .page5 .top .right{
+	background:url(../images/services_right_ui.jpg) no-repeat center center #fff;
+}
+#service .page .top .left .title{
+	font-size:36px;
+	color:#333;
+}
+#service .page .top .left .title span{
+	color:#ccc;
+	font-size:18px;
+	width:100%;
+	display:block;
+	margin-top:5px;
+}
+#service .page .top .left .desc{
+	color:#333;
+	font-size:13px;
+    line-height: 30px;
+}
+#service .page .top .left .descp{
+	color:#999;
+	font-size:12px;
+	line-height: 26px;
+    margin-top: 16px;
+}
+#service .page .top .left a{
+	float: right;
+    width: 165px;
+    height: 32px;
+    display: block;
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background: #ff5256;
+    margin-top: 10px;
+}
+#service .page .top .right li{
+	width:202px;
+	height:54px;
+	line-height:54px;
+	background:#eaeaed;
+	border:1px solid #d5d6db;
+	float:left;
+	margin:12px 23px;
+	transition: all 0.3s ease-out 0s;
+	
+}
+#service .page .top .right li i{
+	float:left;
+	width:30px;
+	height:30px;
+	background:url(../images/test_icon.png) no-repeat center center;
+	margin:10px 16px 0 28px;
+}
+#service .page1 .top .right li .js_icon1{
+	background:url(../images/js_icon1.png) no-repeat center center;	
+}
+#service .page1 .top .right li .js_icon2{
+	background:url(../images/js_icon2.png) no-repeat center center;	
+}
+#service .page1 .top .right li .js_icon3{
+	background:url(../images/js_icon3.png) no-repeat center center;	
+}
+#service .page1 .top .right li .js_icon4{
+	background:url(../images/js_icon4.png) no-repeat center center;	
+}
+#service .page1 .top .right li .js_icon5{
+	background:url(../images/js_icon5.png) no-repeat center center;	
+}
+#service .page1 .top .right li .js_icon6{
+	background:url(../images/js_icon6.png) no-repeat center center;	
+}
+#service .page .top .right li a{
+	color:#333;
+}
+
+#service .page .top .right li:hover{
+	background:#77f1ff;
+}
+#service .page .top .right li:hover a{
+	color:#000;
+}
+#service .page .bottom .mt{
+	height:80px;
+	line-height:80px;
+	padding-left:38px;
+	color:#333;
+	font-size:24px;
+}
+#service .page .bottom .mc{
+	margin:0
+}
+#service .page .bottom .mc li{
+	width:388px;
+	background:#fff;
+	float:left;
+	padding:28px 0 30px 0;
+	margin-right:16px;
+}
+#service .page .bottom .mc li .title{
+	padding-left:90px;
+	font-size:18px;
+	color:#313131;
+	margin-bottom:22px;
+}
+#service .page .bottom .mc li .title span{
+	color:#999;
+	font-size:12px;
+	display:block;
+	margin-top:15px;
+}
+#service .page .bottom .mc li img{
+	width:100%;
+	height:320px;
+}
+#service .page .bottom .mc li a{
+	width:160px;
+	height:34px;
+	line-height:34px;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	background:#ff4d5b;
+	display:block;
+	margin:34px auto 0;
+}

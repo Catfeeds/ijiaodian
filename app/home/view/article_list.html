@@ -1,0 +1,68 @@
+{include file="common/head"/}
+<link href="/style/css/article.css" rel="stylesheet">
+<div id="article">
+	<section class="goods_banner"></section>
+	<div class="listtable w1200 clearfix">
+		<ul class="col1">
+			{volist name="$list" id="vo"}
+				<li>
+					<a href="{:url('home/'.$vo['controller'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}" title="{$vo.title}" class="clearfix">
+						<div class="img_box">
+							<img alt="" src="{$vo.title_thumb}">
+						</div>
+						<div class="info_box">
+							<p class="title" style="{$vo.title_color};{$vo.title_weight}">{$vo.title}</p>
+							<p class="desc">{$vo.desc}</p>
+							<p class="time">{:toDate($vo['createtime'],'Y-m-d H:i:s')}</p>						
+						</div>
+					</a>
+				</li>
+			{/volist}
+			<div>{$page}</div>
+		</ul>
+		 
+		<div class="col2">
+			<div class="article_list">
+				<div class="mt">优选文章</div>
+				<ul class="mc">
+					<li><a href="article.php?id=66">关于杭州市网站公安备案公告</a></li>
+					<li><a href="article.php?id=71">“杭州浪浪浪水公园”体验一夏</a></li>
+					<li><a href="article.php?id=70">建德采大洋枇杷、赏三江美景、捕江中鱼鲜</a></li>
+					<li><a href="article.php?id=69">秀山美地农庄一日游</a></li>
+					<li><a href="article.php?id=68">2016年会之《开创好声音》</a></li>
+				</ul>
+			</div>
+			<div class="pro_list">
+				<div class="mt">优选案例</div>
+				<ul class="mc">
+					<li>
+						<a href="goods.php?id=288" target="_blank">
+							<div class="img_box">
+								<img src="picture/288_thumb_g_1490037271002.jpg"/>
+							</div>
+							<p class="title">北京宏天信业</p>
+						</a>
+					</li>
+					<li>
+						<a href="goods.php?id=294" target="_blank">
+							<div class="img_box">
+								<img src="picture/294_thumb_g_1490045373528.jpg"/>
+							</div>
+							<p class="title">精博康复辅具</p>
+						</a>
+					</li>
+					<li>
+						<a href="goods.php?id=292" target="_blank">
+							<div class="img_box">
+								<img src="picture/292_thumb_g_1490043625074.jpg"/>
+							</div>
+							<p class="title">南宇装饰工程</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- maincontent end here -->
+{include file="common/footer"/}
