@@ -107,6 +107,10 @@ class EmptyController extends Common{
                 $this->assign('list',$list['data']);
                 $this->assign('page',$page);
             }
+
+            if(DBNAME == 'article'){
+                
+            }
 			$cattemplate = db('category')->where('id',input('catId'))->value('template_list');
 			$template =$cattemplate ? $cattemplate : DBNAME.'_list';
             return $this->fetch($template);

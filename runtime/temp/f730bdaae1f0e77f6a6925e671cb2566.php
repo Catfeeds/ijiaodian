@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html";i:1512727032;s:66:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_head.html";i:1512284646;s:68:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_footer.html";i:1512621640;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html";i:1512727820;s:66:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_head.html";i:1512284646;s:68:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_footer.html";i:1512621640;}*/ ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="zh-cn"> <![endif]-->
@@ -87,7 +87,7 @@
 						</div>
 						<div class="info_box">
 							<p class="title" style="<?php echo $vo['title_color']; ?>;<?php echo $vo['title_weight']; ?>"><?php echo $vo['title']; ?></p>
-							<p class="desc"><?php echo $vo['desc']; ?></p>
+							<p class="desc"><?php echo $vo['description']; ?></p>
 							<p class="time"><?php echo toDate($vo['createtime'],'Y-m-d H:i:s'); ?></p>						
 						</div>
 					</a>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_show.html";i:1512727275;s:66:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_head.html";i:1512284646;s:68:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_footer.html";i:1512621640;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_show.html";i:1512728239;s:66:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_head.html";i:1512284646;s:68:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_footer.html";i:1512621640;}*/ ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="zh-cn"> <![endif]-->
@@ -82,7 +82,7 @@
 			<div class="mt">
 				<p><?php echo $info['title']; ?>
 					<span>发布时间：<?php echo toDate($info['createtime'],'Y-m-d'); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					文章来源： <a href="/about/2.html" target="_blank">重庆焦点科技网络有限公司</a></span>
+					文章来源： <a href="/about/2.html" target="_blank"><?php echo $info['copyfrom']; ?></a></span>
 				</p>
 			</div>
 			<div class="mc">

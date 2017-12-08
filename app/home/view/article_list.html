@@ -12,7 +12,7 @@
 						</div>
 						<div class="info_box">
 							<p class="title" style="{$vo.title_color};{$vo.title_weight}">{$vo.title}</p>
-							<p class="desc">{$vo.desc}</p>
+							<p class="desc">{$vo.description}</p>
 							<p class="time">{:toDate($vo['createtime'],'Y-m-d H:i:s')}</p>						
 						</div>
 					</a>
@@ -25,11 +25,16 @@
 			<div class="article_list">
 				<div class="mt">优选文章</div>
 				<ul class="mc">
-					<li><a href="article.php?id=66">关于杭州市网站公安备案公告</a></li>
+
+					 {clt:list_join db='article' dbfield='catid' id='vo' joindb='category' joinfield='id' where='posid = 2 and catid=".input(catId)." ' order="listorder asc,createtime desc" limit='10'}
+                       <li><a href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}" style="{:style($vo['title_style'])}" title="{$vo.title}">{$vo.services}{$vo.title}</a></li>
+                    {/clt:list_join}
+
+					<!-- <li><a href="article.php?id=66">关于杭州市网站公安备案公告</a></li>
 					<li><a href="article.php?id=71">“杭州浪浪浪水公园”体验一夏</a></li>
 					<li><a href="article.php?id=70">建德采大洋枇杷、赏三江美景、捕江中鱼鲜</a></li>
 					<li><a href="article.php?id=69">秀山美地农庄一日游</a></li>
-					<li><a href="article.php?id=68">2016年会之《开创好声音》</a></li>
+					<li><a href="article.php?id=68">2016年会之《开创好声音》</a></li> -->
 				</ul>
 			</div>
 			<div class="pro_list">

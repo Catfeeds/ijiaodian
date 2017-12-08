@@ -30244,3 +30244,2775 @@
 [ info ] [ RUN ] app\admin\controller\Auth->adminRule[ C:\phpStudy\WWW\MyProject\ijiaodian\app\admin\controller\Auth.php ]
 [ info ] [ CACHE ] INIT File
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-08T18:07:53+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/4.html
+[ info ] jiaodian.my/home/case/index/catId/4.html [运行时间：0.165108s][吞吐率：6.06req/s] [内存消耗：2,174.31kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\case_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'cates',
+  10 => 'sub_cates',
+  11 => 'list',
+  12 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001412s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.034586s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 4 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` IN (10,13) [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.075193s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) LIMIT 1 [ RunTime:0.001560s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.002685s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000418s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:07:54+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/case/index/catId/themes/sake/images/favicon.ico [运行时间：0.213412s][吞吐率：4.69req/s] [内存消耗：2,081.55kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000740s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.118098s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000477s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:07:54+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/case/index/catId/themes/sake/images/favicon.ico [运行时间：0.160215s][吞吐率：6.24req/s] [内存消耗：2,081.55kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010567s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.065991s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000502s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:07:56+08:00 ] 127.0.0.1 127.0.0.1 GET /home/service/index/catId/9.html
+[ info ] jiaodian.my/home/service/index/catId/9.html [运行时间：0.215325s][吞吐率：4.64req/s] [内存消耗：2,088.66kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\page_show_service.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010786s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.115963s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.003249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_page` [ RunTime:0.038212s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_page` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT `template_show` FROM `clt_category` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000436s ]
+[ error ] [8]未定义数组索引: template[C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php:18]
+---------------------------------------------------------------
+[ 2017-12-08T18:07:56+08:00 ] 127.0.0.1 127.0.0.1 GET /home/service/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/service/index/catId/themes/sake/images/favicon.ico [运行时间：0.213696s][吞吐率：4.68req/s] [内存消耗：2,081.58kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010442s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.091768s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001746s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:07:56+08:00 ] 127.0.0.1 127.0.0.1 GET /home/service/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/service/index/catId/themes/sake/images/favicon.ico [运行时间：0.157264s][吞吐率：6.36req/s] [内存消耗：2,081.58kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001024s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.045634s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000754s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:07:58+08:00 ] 127.0.0.1 127.0.0.1 GET /about/2.html
+[ info ] jiaodian.my/about/2.html [运行时间：0.191722s][吞吐率：5.22req/s] [内存消耗：2,091.66kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'about',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\page_show_about.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010520s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.102456s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_page` [ RunTime:0.039061s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_page` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT `template_show` FROM `clt_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000406s ]
+[ error ] [8]未定义数组索引: template[C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php:18]
+---------------------------------------------------------------
+[ 2017-12-08T18:07:59+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/4.html
+[ info ] jiaodian.my/home/case/index/catId/4.html [运行时间：0.185782s][吞吐率：5.38req/s] [内存消耗：2,174.23kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/about/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\case_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'cates',
+  10 => 'sub_cates',
+  11 => 'list',
+  12 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000734s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.087203s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 4 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` IN (10,13) [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.054173s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000354s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:08:00+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/case/index/catId/themes/sake/images/favicon.ico [运行时间：0.053098s][吞吐率：18.83req/s] [内存消耗：2,081.55kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000752s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.009322s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000490s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:08:00+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/case/index/catId/themes/sake/images/favicon.ico [运行时间：0.050913s][吞吐率：19.64req/s] [内存消耗：2,081.55kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000724s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007833s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000487s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:08:01+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/14.html
+[ info ] jiaodian.my/home/article/index/catId/14.html [运行时间：0.398653s][吞吐率：2.51req/s] [内存消耗：2,197.03kb] [文件加载：58]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'list',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010280s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.269210s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.079290s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000330s ]
+[ error ] [8]未定义数组索引: desc[C:\phpStudy\WWW\MyProject\ijiaodian\runtime\temp\f730bdaae1f0e77f6a6925e671cb2566.php:90]
+---------------------------------------------------------------
+[ 2017-12-08T18:08:01+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/288_thumb_g_1490037271002.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/288_thumb_g_1490037271002.jpg [运行时间：0.188298s][吞吐率：5.31req/s] [内存消耗：2,081.30kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000884s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.060313s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000508s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:08:02+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/294_thumb_g_1490045373528.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/294_thumb_g_1490045373528.jpg [运行时间：0.188294s][吞吐率：5.31req/s] [内存消耗：2,081.30kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000713s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.076781s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000454s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:08:02+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/292_thumb_g_1490043625074.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/292_thumb_g_1490043625074.jpg [运行时间：0.178211s][吞吐率：5.61req/s] [内存消耗：2,081.48kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001751s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.089343s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000673s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:08:03+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/article/index/catId/themes/sake/images/favicon.ico [运行时间：0.150037s][吞吐率：6.67req/s] [内存消耗：2,081.58kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.071689s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000511s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:08:03+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/article/index/catId/themes/sake/images/favicon.ico [运行时间：0.217864s][吞吐率：4.59req/s] [内存消耗：2,081.58kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000803s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.092223s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001969s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:10:29+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/14.html
+[ info ] jiaodian.my/home/article/index/catId/14.html [运行时间：0.143858s][吞吐率：6.95req/s] [内存消耗：2,302.69kb] [文件加载：58]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'list',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000860s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.075465s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.001919s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.009273s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000316s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:10:29+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/288_thumb_g_1490037271002.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/288_thumb_g_1490037271002.jpg [运行时间：0.053280s][吞吐率：18.77req/s] [内存消耗：2,081.30kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000775s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007795s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000614s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:10:30+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/294_thumb_g_1490045373528.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/294_thumb_g_1490045373528.jpg [运行时间：0.182782s][吞吐率：5.47req/s] [内存消耗：2,081.30kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000773s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.087388s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000548s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:10:30+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/292_thumb_g_1490043625074.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/292_thumb_g_1490043625074.jpg [运行时间：0.054987s][吞吐率：18.19req/s] [内存消耗：2,081.30kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000926s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008203s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000488s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:10:31+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/article/index/catId/themes/sake/images/favicon.ico [运行时间：0.053288s][吞吐率：18.77req/s] [内存消耗：2,081.98kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000892s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007546s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000517s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:10:31+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/article/index/catId/themes/sake/images/favicon.ico [运行时间：0.060518s][吞吐率：16.52req/s] [内存消耗：2,081.58kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010284s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007502s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000497s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:12:16+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/goods.php?id=294
+[ info ] jiaodian.my/home/article/index/catId/goods.php?id=294 [运行时间：0.055518s][吞吐率：18.01req/s] [内存消耗：2,082.01kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '294',
+  'catId' => 'goods.php',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001070s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008755s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000624s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:13:55+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/14.html
+[ info ] jiaodian.my/home/article/index/catId/14.html [运行时间：0.059753s][吞吐率：16.74req/s] [内存消耗：2,157.36kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'list',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000984s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007701s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.007475s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000247s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:13:56+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/288_thumb_g_1490037271002.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/288_thumb_g_1490037271002.jpg [运行时间：0.066910s][吞吐率：14.95req/s] [内存消耗：2,081.51kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000739s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007717s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000427s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:13:56+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/294_thumb_g_1490045373528.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/294_thumb_g_1490045373528.jpg [运行时间：0.076999s][吞吐率：12.99req/s] [内存消耗：2,081.51kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.021354s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.002271s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:13:57+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/292_thumb_g_1490043625074.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/292_thumb_g_1490043625074.jpg [运行时间：0.064867s][吞吐率：15.42req/s] [内存消耗：2,081.51kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010025s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008291s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000511s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:13:57+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/4.html
+[ info ] jiaodian.my/home/case/index/catId/4.html [运行时间：0.057131s][吞吐率：17.50req/s] [内存消耗：2,174.38kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\case_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'cates',
+  10 => 'sub_cates',
+  11 => 'list',
+  12 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008639s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 4 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` IN (10,13) [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.007741s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000291s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:00+08:00 ] 127.0.0.1 127.0.0.1 GET /home/service/index/catId/9.html
+[ info ] jiaodian.my/home/service/index/catId/9.html [运行时间：0.055384s][吞吐率：18.06req/s] [内存消耗：2,088.88kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\page_show_service.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007972s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_page` [ RunTime:0.007539s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_page` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT `template_show` FROM `clt_category` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000420s ]
+[ error ] [8]未定义数组索引: template[C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php:18]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:00+08:00 ] 127.0.0.1 127.0.0.1 GET /home/service/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/service/index/catId/themes/sake/images/favicon.ico [运行时间：0.213312s][吞吐率：4.69req/s] [内存消耗：2,081.72kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000923s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.075636s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001970s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:00+08:00 ] 127.0.0.1 127.0.0.1 GET /home/service/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/service/index/catId/themes/sake/images/favicon.ico [运行时间：0.098114s][吞吐率：10.19req/s] [内存消耗：2,081.72kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000814s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.049525s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000528s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:02+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/4.html
+[ info ] jiaodian.my/home/case/index/catId/4.html [运行时间：0.070736s][吞吐率：14.14req/s] [内存消耗：2,174.37kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\case_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'cates',
+  10 => 'sub_cates',
+  11 => 'list',
+  12 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010211s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008716s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 4 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` IN (10,13) [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.008112s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:04+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/14.html
+[ info ] jiaodian.my/home/article/index/catId/14.html [运行时间：0.067054s][吞吐率：14.91req/s] [内存消耗：2,157.16kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'list',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010652s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008138s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.007798s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:04+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/288_thumb_g_1490037271002.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/288_thumb_g_1490037271002.jpg [运行时间：0.061778s][吞吐率：16.19req/s] [内存消耗：2,081.51kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001659s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007879s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000570s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:04+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/294_thumb_g_1490045373528.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/294_thumb_g_1490045373528.jpg [运行时间：0.069272s][吞吐率：14.44req/s] [内存消耗：2,081.51kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000760s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.020579s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000565s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:05+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/292_thumb_g_1490043625074.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/292_thumb_g_1490043625074.jpg [运行时间：0.065752s][吞吐率：15.21req/s] [内存消耗：2,081.51kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010561s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008568s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000647s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:07+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/14.html
+[ info ] jiaodian.my/home/article/info/id/34/catId/14.html [运行时间：0.066429s][吞吐率：15.05req/s] [内存消耗：2,103.91kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_show.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009783s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007984s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.008061s ]
+[ sql ] [ SQL ] UPDATE `clt_article`  SET `hits`=hits+1  WHERE  `id` = 34 [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_article` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.000534s ]
+[ error ] [8]未定义数组索引: pic[C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php:118]
+[ error ] [8]Use of undefined constant __HOME__ - assumed '__HOME__'[C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php:118]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:07+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/288_thumb_g_1490037271002.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/288_thumb_g_1490037271002.jpg [运行时间：0.055378s][吞吐率：18.06req/s] [内存消耗：2,010.45kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000758s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008641s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000784s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:07+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/294_thumb_g_1490045373528.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/294_thumb_g_1490045373528.jpg [运行时间：0.055670s][吞吐率：17.96req/s] [内存消耗：2,010.45kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001081s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008052s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000606s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/300_thumb_g_1490129933981.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/300_thumb_g_1490129933981.jpg [运行时间：0.076739s][吞吐率：13.03req/s] [内存消耗：2,010.45kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000853s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.012562s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000414s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/292_thumb_g_1490043625074.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/292_thumb_g_1490043625074.jpg [运行时间：0.076766s][吞吐率：13.03req/s] [内存消耗：2,010.45kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000921s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.011744s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000500s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/298_thumb_g_1490058443168.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/298_thumb_g_1490058443168.jpg [运行时间：0.058661s][吞吐率：17.05req/s] [内存消耗：2,010.40kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001252s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007829s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000469s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/article/info/id/34/catId/themes/sake/images/favicon.ico [运行时间：0.055854s][吞吐率：17.90req/s] [内存消耗：2,010.62kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000816s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008610s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000481s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/article/info/id/34/catId/themes/sake/images/favicon.ico [运行时间：0.054161s][吞吐率：18.46req/s] [内存消耗：2,010.62kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000793s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008480s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000588s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:08+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/14.html
+[ info ] jiaodian.my/home/article/index/catId/14.html [运行时间：0.056948s][吞吐率：17.56req/s] [内存消耗：2,157.16kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'list',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001082s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008307s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.006893s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000558s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:09+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/294_thumb_g_1490045373528.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/294_thumb_g_1490045373528.jpg [运行时间：0.068520s][吞吐率：14.59req/s] [内存消耗：2,081.51kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000843s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.012627s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000478s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:09+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/292_thumb_g_1490043625074.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/292_thumb_g_1490043625074.jpg [运行时间：0.077660s][吞吐率：12.88req/s] [内存消耗：2,081.51kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.011282s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000435s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:09+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/288_thumb_g_1490037271002.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/288_thumb_g_1490037271002.jpg [运行时间：0.089538s][吞吐率：11.17req/s] [内存消耗：2,081.51kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001867s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.035420s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000509s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:10+08:00 ] 127.0.0.1 127.0.0.1 GET /home/service/index/catId/9.html
+[ info ] jiaodian.my/home/service/index/catId/9.html [运行时间：0.058794s][吞吐率：17.01req/s] [内存消耗：2,088.80kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\page_show_service.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.009498s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_page` [ RunTime:0.007753s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_page` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT `template_show` FROM `clt_category` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000450s ]
+[ error ] [8]未定义数组索引: template[C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php:18]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:10+08:00 ] 127.0.0.1 127.0.0.1 GET /home/service/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/service/index/catId/themes/sake/images/favicon.ico [运行时间：0.066059s][吞吐率：15.14req/s] [内存消耗：2,081.72kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010806s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008302s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000576s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:10+08:00 ] 127.0.0.1 127.0.0.1 GET /home/service/index/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/service/index/catId/themes/sake/images/favicon.ico [运行时间：0.052541s][吞吐率：19.03req/s] [内存消耗：2,081.72kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'service',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000792s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007234s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000525s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:11+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/4.html
+[ info ] jiaodian.my/home/case/index/catId/4.html [运行时间：0.057392s][吞吐率：17.42req/s] [内存消耗：2,174.37kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\case_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'cates',
+  10 => 'sub_cates',
+  11 => 'list',
+  12 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000897s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007898s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 4 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` IN (10,13) [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.007272s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:33+08:00 ] 127.0.0.1 127.0.0.1 GET /home/case/index/catId/4.html
+[ info ] jiaodian.my/home/case/index/catId/4.html [运行时间：0.070171s][吞吐率：14.25req/s] [内存消耗：2,174.79kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'case',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/service/index/catId/9.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\case_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'cates',
+  10 => 'sub_cates',
+  11 => 'list',
+  12 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010465s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008144s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` = 4 [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `parentid` IN (10,13) [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_case` [ RunTime:0.007737s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_case` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` IN (4,10,11,12,13) ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:35+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/14.html
+[ info ] jiaodian.my/home/article/index/catId/14.html [运行时间：0.057087s][吞吐率：17.52req/s] [内存消耗：2,157.25kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/case/index/catId/4.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'list',
+  10 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000943s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.009170s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.007325s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir` FROM `clt_article` `a` LEFT JOIN `clt_category` `c` ON `a`.`catid`=`c`.`id` WHERE  `catid` = 14 ORDER BY listorder asc,createtime desc LIMIT 0,15 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `template_list` FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:35+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/294_thumb_g_1490045373528.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/294_thumb_g_1490045373528.jpg [运行时间：0.082286s][吞吐率：12.15req/s] [内存消耗：2,081.69kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001539s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.028220s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000540s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:35+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/292_thumb_g_1490043625074.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/292_thumb_g_1490043625074.jpg [运行时间：0.082672s][吞吐率：12.10req/s] [内存消耗：2,081.68kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000818s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.028493s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000427s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:14:35+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/index/catId/picture/288_thumb_g_1490037271002.jpg
+[ info ] jiaodian.my/home/article/index/catId/picture/288_thumb_g_1490037271002.jpg [运行时间：0.092585s][吞吐率：10.80req/s] [内存消耗：2,081.69kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000886s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.029077s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000804s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:15:59+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/Category/index.html
+[ info ] jiaodian.my/admin/Category/index.html [运行时间：0.033854s][吞吐率：29.54req/s] [内存消耗：1,962.04kb] [文件加载：54]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\admin\controller\Category.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/admin\view\category\index.html [ array (
+  0 => 'module',
+  1 => 'categorys',
+  2 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-08T18:16:01+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/index/catid/14.html
+[ info ] jiaodian.my/admin/article/index/catid/14.html [运行时间：0.033214s][吞吐率：30.11req/s] [内存消耗：1,984.73kb] [文件加载：54]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/admin/Category/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'catid' => '14',
+)
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/admin\view\content\index.html [ array (
+  0 => 'fields',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2017-12-08T18:16:02+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/article/index.html
+[ info ] jiaodian.my/admin/article/index.html [运行时间：0.068668s][吞吐率：14.56req/s] [内存消耗：2,117.09kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/admin/article/index/catid/14.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://jiaodian.my',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '24',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'catid' => '14',
+)
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->index[ C:\phpStudy\WWW\MyProject\ijiaodian\app\admin\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001225s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.009067s ]
+[ sql ] [ SQL ] SELECT `id` FROM `clt_category` WHERE  `parentid` = 14 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.008193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.009161s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_article` WHERE  `catid` IN (14,15) LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_article` WHERE  `catid` IN (14,15) ORDER BY listorder asc,id desc LIMIT 0,10 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:16:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/article/edit.html?id=34&catid=14
+[ info ] jiaodian.my/admin/article/edit.html?id=34&catid=14 [运行时间：0.072995s][吞吐率：13.70req/s] [内存消耗：2,151.39kb] [文件加载：57]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/admin/article/index/catid/14.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catid' => '14',
+)
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian/app/admin\lang\zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\EmptyController->edit[ C:\phpStudy\WWW\MyProject\ijiaodian\app\admin\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/admin\view\content\edit.html [ array (
+  0 => 'fields',
+  1 => 'info',
+  2 => 'form',
+  3 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000991s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.007981s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_article` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007615s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_role` [ RunTime:0.006682s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_role` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_posid` [ RunTime:0.007248s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_posid` [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2017-12-08T18:17:24+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/14.html
+[ info ] jiaodian.my/home/article/info/id/34/catId/14.html [运行时间：0.063429s][吞吐率：15.77req/s] [内存消耗：2,249.55kb] [文件加载：58]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/index/catId/14.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ VIEW ] C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_show.html [ array (
+  0 => 'sys',
+  1 => 'action',
+  2 => 'controller',
+  3 => 'title',
+  4 => 'keywords',
+  5 => 'description',
+  6 => 'category',
+  7 => 'adList',
+  8 => 'linkList',
+  9 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007831s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 14 LIMIT 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_article` [ RunTime:0.007269s ]
+[ sql ] [ SQL ] UPDATE `clt_article`  SET `hits`=hits+1  WHERE  `id` = 34 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_article` WHERE  `id` = 34 LIMIT 1 [ RunTime:0.000401s ]
+[ error ] [8]未定义数组索引: pic[C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php:122]
+[ error ] [8]Use of undefined constant __HOME__ - assumed '__HOME__'[C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php:122]
+---------------------------------------------------------------
+[ 2017-12-08T18:17:24+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/288_thumb_g_1490037271002.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/288_thumb_g_1490037271002.jpg [运行时间：0.051602s][吞吐率：19.38req/s] [内存消耗：2,010.57kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000764s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008112s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000467s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:17:25+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/294_thumb_g_1490045373528.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/294_thumb_g_1490045373528.jpg [运行时间：0.055707s][吞吐率：17.95req/s] [内存消耗：2,010.57kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000813s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008131s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000518s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:17:25+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/292_thumb_g_1490043625074.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/292_thumb_g_1490043625074.jpg [运行时间：0.071814s][吞吐率：13.92req/s] [内存消耗：2,010.63kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001432s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007800s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000514s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:17:25+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/298_thumb_g_1490058443168.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/298_thumb_g_1490058443168.jpg [运行时间：0.072797s][吞吐率：13.74req/s] [内存消耗：2,010.63kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001262s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.018219s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000489s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:17:25+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/picture/300_thumb_g_1490129933981.jpg
+[ info ] jiaodian.my/home/article/info/id/34/catId/picture/300_thumb_g_1490129933981.jpg [运行时间：0.077510s][吞吐率：12.90req/s] [内存消耗：2,010.63kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'picture',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005870s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.008049s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000504s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:17:25+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/article/info/id/34/catId/themes/sake/images/favicon.ico [运行时间：0.050550s][吞吐率：19.78req/s] [内存消耗：2,010.70kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000745s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007216s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000424s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-08T18:17:25+08:00 ] 127.0.0.1 127.0.0.1 GET /home/article/info/id/34/catId/themes/sake/images/favicon.ico
+[ info ] jiaodian.my/home/article/info/id/34/catId/themes/sake/images/favicon.ico [运行时间：0.049008s][吞吐率：20.40req/s] [内存消耗：2,010.70kb] [文件加载：55]
+[ info ] [ LANG ] C:\phpStudy\WWW\MyProject\ijiaodian\think\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'article',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'UM_distinctid=1603535bae9701-0fc4560e774ff6-7b1030-15f900-1603535baea7cf; PHPSESSID=a51uh5ualms1a6lpgfacfkef96; Hm_lvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lpvt_5a0c2296702b9606d757811d620adb89=1512726055; Hm_lvt_ac4c810a1005395256c34485ce161b8a=1512726055; Hm_lpvt_ac4c810a1005395256c34485ce161b8a=1512726055; CNZZDATA1262639474=655713130-1512718420-%7C1512723867',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://jiaodian.my/home/article/info/id/34/catId/14.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'jiaodian.my',
+)
+[ info ] [ PARAM ] array (
+  'id' => '34',
+  'catId' => 'themes',
+  'sake' => 'images',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\home\controller\EmptyController->info[ C:\phpStudy\WWW\MyProject\ijiaodian\app\home\controller\EmptyController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:dbname=jiaodian;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_category` [ RunTime:0.007294s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_category` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000423s ]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'jiaodian.clt_' doesn't exist[C:\phpStudy\WWW\MyProject\ijiaodian\think\library\think\db\Connection.php:388]
