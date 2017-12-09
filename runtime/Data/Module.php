@@ -91,5 +91,18 @@ return array (
     'listorder' => 0,
     'status' => 1,
   ),
+  11 => 
+  array (
+    'id' => 11,
+    'title' => '项目模型',
+    'name' => 'project',
+    'description' => '',
+    'type' => 1,
+    'issystem' => 0,
+    'listfields' => '*',
+    'setup' => NULL,
+    'listorder' => 0,
+    'status' => 1,
+  ),
 );
 ?>

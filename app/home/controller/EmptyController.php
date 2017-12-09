@@ -27,6 +27,10 @@ class EmptyController extends Common{
                 }
 				
             }
+
+            //最新四篇文章
+            $news_list = db('article')->where(array('catid'=>15))->order('createtime desc')->limit(4)->select();
+            $this->assign('news_list',$news_list);
             return $this->fetch($template);
         }else{
             if(DBNAME=='picture'){
@@ -108,9 +112,6 @@ class EmptyController extends Common{
                 $this->assign('page',$page);
             }
 
-            if(DBNAME == 'article'){
-                
-            }
 			$cattemplate = db('category')->where('id',input('catId'))->value('template_list');
 			$template =$cattemplate ? $cattemplate : DBNAME.'_list';
             return $this->fetch($template);

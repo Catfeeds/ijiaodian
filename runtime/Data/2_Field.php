@@ -113,7 +113,7 @@ return array (
     'class' => 'content',
     'type' => 'editor',
     'setup' => 'array (
-  \'edittype\' => \'layedit\',
+  \'edittype\' => \'UEditor\',
 )',
     'ispost' => 1,
     'unpostgroup' => '',

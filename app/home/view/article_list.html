@@ -26,44 +26,25 @@
 				<div class="mt">优选文章</div>
 				<ul class="mc">
 
-					 {clt:list_join db='article' dbfield='catid' id='vo' joindb='category' joinfield='id' where='posid = 2 and catid=".input(catId)." ' order="listorder asc,createtime desc" limit='10'}
+					 {clt:list_join db='article' dbfield='catid' id='vo' joindb='category' joinfield='id' where='posid = 5 and catid=".input(catId)." ' order="listorder asc,createtime desc" limit='10'}
                        <li><a href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}" style="{:style($vo['title_style'])}" title="{$vo.title}">{$vo.services}{$vo.title}</a></li>
                     {/clt:list_join}
-
-					<!-- <li><a href="article.php?id=66">关于杭州市网站公安备案公告</a></li>
-					<li><a href="article.php?id=71">“杭州浪浪浪水公园”体验一夏</a></li>
-					<li><a href="article.php?id=70">建德采大洋枇杷、赏三江美景、捕江中鱼鲜</a></li>
-					<li><a href="article.php?id=69">秀山美地农庄一日游</a></li>
-					<li><a href="article.php?id=68">2016年会之《开创好声音》</a></li> -->
 				</ul>
 			</div>
 			<div class="pro_list">
 				<div class="mt">优选案例</div>
 				<ul class="mc">
+					{clt:list_join db='case' dbfield='catid'  id='vo' joindb='category' joinfield='id' where='posid = 5' order="listorder asc,createtime desc" limit='5'}
 					<li>
-						<a href="goods.php?id=288" target="_blank">
+						<a href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}" target="_blank">
 							<div class="img_box">
-								<img src="picture/288_thumb_g_1490037271002.jpg"/>
+								<img src="/public{$vo.thumb}"/>
 							</div>
-							<p class="title">北京宏天信业</p>
+							<p class="title">{$vo.title}</p>
 						</a>
 					</li>
-					<li>
-						<a href="goods.php?id=294" target="_blank">
-							<div class="img_box">
-								<img src="picture/294_thumb_g_1490045373528.jpg"/>
-							</div>
-							<p class="title">精博康复辅具</p>
-						</a>
-					</li>
-					<li>
-						<a href="goods.php?id=292" target="_blank">
-							<div class="img_box">
-								<img src="picture/292_thumb_g_1490043625074.jpg"/>
-							</div>
-							<p class="title">南宇装饰工程</p>
-						</a>
-					</li>
+					{/clt:list_join}
+					
 				</ul>
 			</div>
 		</div>

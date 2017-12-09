@@ -7,5 +7,6 @@ return array (
   'download' => 5,
   'team' => 6,
   'case' => 10,
+  'project' => 11,
 );
 ?>
