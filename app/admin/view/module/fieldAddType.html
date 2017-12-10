@@ -293,6 +293,28 @@
 
 </table>
 {/case}
+{case value="sql_select" }
+<table class="typeTable" cellpadding="2" cellspacing="1" width="100%">
+    <tr>
+        <td width="120">SQL语句</td>
+        <td><input type="text" class="layui-input input-text" size="5" name="setup[sql]" value="" /></td>
+    </tr>
+      <tr>
+        <td>key</td>
+        <td> <input type="text" class="layui-input input-text" size="50"  name="setup[key]" value="" /></td>
+    </tr>
+      <tr>
+        <td>value</td>
+        <td> <input type="text" class="layui-input input-text" size="50"  name="setup[value]" value="" /></td>
+    </tr>
+<!--     <tr>
+        <td>默认值</td>
+        <td> <input type="text" class="layui-input input-text" size="50"  name="setup[default]" value="" /></td>
+    </tr> -->
+
+    <input type="hidden" id="varchar" name="setup[fieldtype]" value="varchar"/>
+</table>
+{/case}
 {default /}
 {/switch}
 

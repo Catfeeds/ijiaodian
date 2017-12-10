@@ -214,72 +214,46 @@
 		<ul class="mc w1200">
 			
 			 	
-			
-			<li >
+			{clt:list_join db='project' dbfield='catid' id='vo' key='k' joindb='category' joinfield='id' where='catid=16 and pstatus=1'  order="createtime desc" limit='4'}
+			<li {if condition="($k+1)%2 == 0"}class="mr_0"{/if}>
 				<p class="state">进行中</p>
-				<p class="title">跨境海淘微仓批发平台开发</p>
-				<p class="desc">项目简述：平台为国内卖家和各大电商平台提供包括海外正品货源采购、仓储管理、订单处理、配货包装、物流配送的一站式服务，卖家可通过微信迅速下单建仓，减少成本，方便快速。</p>
+				<p class="title">{$vo.title}</p>
+				<p class="desc">项目简述：{$vo.description}</p>
 				<div class="author">
-					<img src="/style/picture/1487643759912390013.png" alt="袁林荣">
-					<div class="author_main">
-						<p class="name">袁林荣<span>项目策划经理</span></p>
-						<p class="profile">十多年网络营销经验服务于杭城上千家大中小企业，特别善于策划如何保持企业品牌形象的同时运用营销技巧，让企业在目标市场占有独特位置。</p>
-					</div>
+					{switch name="$k" }
+					    {case value="0" break="0或1"}
+					    	<img src="/style/picture/1487643759912390013.png" alt="袁林荣">
+							<div class="author_main">
+								<p class="name">袁林荣<span>项目策划经理</span></p>
+								<p class="profile">十多年网络营销经验服务于杭城上千家大中小企业，特别善于策划如何保持企业品牌形象的同时运用营销技巧，让企业在目标市场占有独特位置。</p>
+							</div>
+					    {/case}
+					    {case value="1"}
+							<img src="/style/picture/1487814038271611651.jpg" alt="应洁">
+							<div class="author_main">
+								<p class="name">应洁<span>项目策划</span></p>
+								<p class="profile">从事网络营销实践近8年，为近百家企业提供全面的网络营销策划方案，善于倾听客户的需求，帮助客户解决问题，为客户打造一个赚钱的网站。</p>
+							</div>
+					    {/case}
+					    {case value="2"}
+							<img src="/style/picture/1487719590104271283.jpg" alt="金文勇">
+							<div class="author_main">
+								<p class="name">金文勇<span>项目策划</span></p>
+								<p class="profile">2001年踏入互联网行业，善于与人沟通，做事严谨细心、稳重，把客户当作自己的良师益友，共同进步，共同发展。曾合作过天堂伞. 工联大厦等客户。</p>
+							</div>
+					    {/case}
+					    {default /}
+							<img src="/style/picture/1487813634338558806.jpg" alt="方玮玲">
+							<div class="author_main">
+								<p class="name">方玮玲<span>项目策划</span></p>
+								<p class="profile">高级产品营销策略讲师，具备熟练的产品营销策划实战及管理经验，曾代表阿里/搜狗等互联网著名公司向中小企业传授及分享互联网产品。</p>
+							</div>
+					{/switch}
+
 					<a class="consultation" href="tencent://message/?uin=723788021&Site=小桔网络&Menu=yes" target="_blank">立即咨询</a><a class="get_programme" href="tencent://message/?uin=723788021&Site=小桔网络&Menu=yes" target="_blank">具体方案</a>
 				</div>
 			</li>
-			
-			 	
-			
-			<li class="mr_0">
-				<p class="state">进行中</p>
-				<p class="title">微信分销返利平台项目</p>
-				<p class="desc">项目简述：科技改变生活，移动带来更过便捷，为了更好地展现企业的前沿营销理念，让消费者成为传播的爆点，快速建立以消费者为主体的分销系统渠道，为努力打造行业内一流平台奠定基础。</p>
-				<div class="author">
-					<img src="/style/picture/1487814038271611651.jpg" alt="应洁">
-					<div class="author_main">
-						<p class="name">应洁<span>项目策划</span></p>
-						<p class="profile">从事网络营销实践近8年，为近百家企业提供全面的网络营销策划方案，善于倾听客户的需求，帮助客户解决问题，为客户打造一个赚钱的网站。</p>
-					</div>
-					<a class="consultation" href="tencent://message/?uin=723788021&Site=应洁&Menu=yes" target="_blank">立即咨询</a><a class="get_programme" href="tencent://message/?uin=723788021&Site=应洁&Menu=yes" target="_blank">具体方案</a>
-				</div>
-			</li>
-			
-			 	
-			
-			<li >
-				<p class="state">进行中</p>
-				<p class="title">健康管理会员制平台开发</p>
-				<p class="desc">项目简述：平台依托雄厚的资金实力和医院的合作、有专业的母婴护理团队、全球尖端的基因检测、细胞检测技术，贴心的客户服务体系，为会员提供高端健康科技管理、围绕养、健、智、产等精准健康方面的服务。</p>
-				<div class="author">
-					<img src="/style/picture/1487719590104271283.jpg" alt="金文勇">
-					<div class="author_main">
-						<p class="name">金文勇<span>项目策划</span></p>
-						<p class="profile">2001年踏入互联网行业，善于与人沟通，做事严谨细心、稳重，把客户当作自己的良师益友，共同进步，共同发展。曾合作过天堂伞. 工联大厦等客户。</p>
-					</div>
-					<a class="consultation" href="tencent://message/?uin=924101049&Site=金文勇&Menu=yes" target="_blank">立即咨询</a><a class="get_programme" href="tencent://message/?uin=924101049&Site=金文勇&Menu=yes" target="_blank">具体方案</a>
-				</div>
-			</li>
-			
-			 	
-			
-			<li class="mr_0">
-				<p class="state">进行中</p>
-				<p class="title">服饰行业内部批发采购平台开发</p>
-				<p class="desc">项目简述：随着互联网的快速发展,客户对服装的需求将不再单一化,服装批发市场行业也将面临着重要的转型。搭建一个专属于自己的电子商务平台,让天下的服装生意不再难做。</p>
-				<div class="author">
-					<img src="/style/picture/1487813634338558806.jpg" alt="方玮玲">
-					<div class="author_main">
-						<p class="name">方玮玲<span>项目策划</span></p>
-						<p class="profile">高级产品营销策略讲师，具备熟练的产品营销策划实战及管理经验，曾代表阿里/搜狗等互联网著名公司向中小企业传授及分享互联网产品。</p>
-					</div>
-					<a class="consultation" href="tencent://message/?uin=723788021&Site=小桔网络&Menu=yes" target="_blank">立即咨询</a><a class="get_programme" href="tencent://message/?uin=723788021&Site=小桔网络&Menu=yes" target="_blank">具体方案</a>
-				</div>
-			</li>
-			
-					
-			
-			
+			{/clt:list_join}
 		</ul>
 	</div>
 	<div class="customer">

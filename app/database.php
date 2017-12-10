@@ -17,11 +17,9 @@ return [
     // 数据库名
     'database'        => 'jiaodian',
     // 用户名
-    // 'username'        => 'jiaodian',
-    'username'        => 'root',
+    'username'        => 'jiaodian',
     // 密码
-    // 'password'        => 'XKJSNkmKWW',
-    'password'        => 'root',
+    'password'        => 'XKJSNkmKWW',
     // 端口
     'hostport'        => '3306',
     // 连接dsn

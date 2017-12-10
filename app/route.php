@@ -33,8 +33,4 @@ return [
 
     'team/:catId' => 'home/team/index',
     'contact/:catId' => 'home/contact/index',
-
-    //'article/:catId' => 'home/article/index',
-    //'articleInfo/:id/:catId' => 'home/article/info',
-
 ];

@@ -545,6 +545,36 @@ class Form{
         return $thumbstr;
     }
 
+    public function sql_select($info,$value){
+        $setup = $info['setup'];
+        $id = $field = $info['field'];
+        $validate = getvalidate($info);
+        $list = db($setup['sql'])->select();
+        var_dump($list);
+        $parseStr = '<select id="'.$id.'" name="'.$field.'"  class="'.$info['class'].'" '.$validate.'>';
+        if(is_array($list)) {
+            foreach($list as $key => $val) {
+                if(!empty($value)){
+                    $selected='';
+                    if(is_array($value)){
+                        if(in_array($key,$value)){
+                            $selected = ' selected="selected"';
+                        }
+                    }else{
+                        if($value==$key){
+                            $selected = ' selected="selected"';
+                        }
+                    }
+                    $parseStr   .= '<option '.$selected.' value="'.$key.'">'.$val.'</option>';
+                }else{
+                    $parseStr   .= '<option value="'.$val[$setup['key']].'">'.$val[$setup['value']].'</option>';
+                }
+            }
+        }
+        $parseStr   .= '</select>';
+        return $parseStr;
+    }
+
     /*public function files($info,$value){
         $info['setup']=is_array($info['setup']) ? $info['setup'] : string2array($info['setup']);
         $id = $field = $info['field'];
