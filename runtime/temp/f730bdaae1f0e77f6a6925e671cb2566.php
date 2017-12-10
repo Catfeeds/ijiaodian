@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html";i:1512727820;s:66:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_head.html";i:1512284646;s:68:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_footer.html";i:1512621640;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:67:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\article_list.html";i:1512791632;s:66:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_head.html";i:1512284646;s:68:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_footer.html";i:1512621640;}*/ ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="zh-cn"> <![endif]-->
@@ -100,40 +100,36 @@
 			<div class="article_list">
 				<div class="mt">优选文章</div>
 				<ul class="mc">
-					<li><a href="article.php?id=66">关于杭州市网站公安备案公告</a></li>
-					<li><a href="article.php?id=71">“杭州浪浪浪水公园”体验一夏</a></li>
-					<li><a href="article.php?id=70">建德采大洋枇杷、赏三江美景、捕江中鱼鲜</a></li>
-					<li><a href="article.php?id=69">秀山美地农庄一日游</a></li>
-					<li><a href="article.php?id=68">2016年会之《开创好声音》</a></li>
+
+					 <?php $result = db("article")->alias("a")->join("clt_category c","a.catid = c.id","left")
+            ->where("posid = 5 and catid=".input(catId)." ")
+            ->field("a.*,c.catdir")
+            ->limit(10)
+            ->order("listorder asc,createtime desc")
+            ->select();foreach ($result as $k=>$vo):?>
+                       <li><a href="<?php echo url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid'])); ?>" style="<?php echo style($vo['title_style']); ?>" title="<?php echo $vo['title']; ?>"><?php echo $vo['services']; ?><?php echo $vo['title']; ?></a></li>
+                    <?php endforeach ?>
 				</ul>
 			</div>
 			<div class="pro_list">
 				<div class="mt">优选案例</div>
 				<ul class="mc">
+					<?php $result = db("case")->alias("a")->join("clt_category c","a.catid = c.id","left")
+            ->where("posid = 5")
+            ->field("a.*,c.catdir")
+            ->limit(5)
+            ->order("listorder asc,createtime desc")
+            ->select();foreach ($result as $k=>$vo):?>
 					<li>
-						<a href="goods.php?id=288" target="_blank">
+						<a href="<?php echo url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid'])); ?>" target="_blank">
 							<div class="img_box">
-								<img src="picture/288_thumb_g_1490037271002.jpg"/>
+								<img src="/public<?php echo $vo['thumb']; ?>"/>
 							</div>
-							<p class="title">北京宏天信业</p>
+							<p class="title"><?php echo $vo['title']; ?></p>
 						</a>
 					</li>
-					<li>
-						<a href="goods.php?id=294" target="_blank">
-							<div class="img_box">
-								<img src="picture/294_thumb_g_1490045373528.jpg"/>
-							</div>
-							<p class="title">精博康复辅具</p>
-						</a>
-					</li>
-					<li>
-						<a href="goods.php?id=292" target="_blank">
-							<div class="img_box">
-								<img src="picture/292_thumb_g_1490043625074.jpg"/>
-							</div>
-							<p class="title">南宇装饰工程</p>
-						</a>
-					</li>
+					<?php endforeach ?>
+					
 				</ul>
 			</div>
 		</div>

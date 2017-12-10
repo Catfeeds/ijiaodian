@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\page_show_about.html";i:1512284141;s:66:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_head.html";i:1512284646;s:68:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_footer.html";i:1512621640;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:70:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\page_show_about.html";i:1512793646;s:66:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_head.html";i:1512284646;s:68:"C:\phpStudy\WWW\MyProject\ijiaodian/app/home\view\common_footer.html";i:1512621640;}*/ ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="zh-cn"> <![endif]-->
@@ -81,35 +81,35 @@
 			<h1><a href="index.php"><img src="/style/picture/logo_kc.png">杭州开创网络技术有限公司</a></h1>
 			<h2>高端网站品牌整合服务平台</h2>
 			<h3>17年的建站经验，专注为客户提供品牌网站定制，营销型网站定制，高端个性化网站定制，官方电子商城开发，移动端微信公众账号开发，WEB端软件开发等，为客户打造一个有故事有吸引力有影响力的网站，协助客户更精准的利用互联网工具拓展业务渠道</3>
-			<ul class="banner_icon">
-				<li><i class="about_title_icon1"></i>网站建设</li>
-				<li><i class="about_title_icon2"></i>电商平台</li>
-				<li><i class="about_title_icon3"></i>微信开发</li>
-			</ul>
+				<ul class="banner_icon">
+					<li><i class="about_title_icon1"></i>网站建设</li>
+					<li><i class="about_title_icon2"></i>电商平台</li>
+					<li><i class="about_title_icon3"></i>微信开发</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<div class="about_us w1200">
-		<p class="mt">关于开创<span>成立于2000年的互联网公司，17年的建站经验，服务过数万家企事业单位</span></p>
-		<div class="mc">
-			<p class="desc">       杭州开创网络技术有限公司成立于2000年元月，是杭州地区专业提供互联网服务的网络公司之一。我们有一支精通于为客户提供互联网解决方案的专家
-顾问，更有一支专业敬业的技术团队和客服团队，我们专注为客户提供品牌网站定制，营销型网站定制，高端个性化网站定制，B2C/BBC，移动端微信公众账号开
-发，WEB端软件开发等，为客户打造一个有故事有吸引力有影响力的网站，协助客户更精准的利用互联网工具拓展业务渠道。
-      创业至今，公司已成功为杭州地区近五千余家企业、政府、学校提供完善的电子商务服务，基于社会各界给予开创公司的支持及开创人的共同努力，通过十六年
-的发展，公司获得了实质性的突破，取得了一个个的成功。我们正迈着坚定的步伐朝着“开创网络，服务未来”的道路稳步前进。
-			</p>
-			<img src="/style/picture/kc_timeline.jpg">
+		<div class="about_us w1200">
+			<p class="mt">关于开创<span>成立于2000年的互联网公司，17年的建站经验，服务过数万家企事业单位</span></p>
+			<div class="mc">
+				<p class="desc">       杭州开创网络技术有限公司成立于2000年元月，是杭州地区专业提供互联网服务的网络公司之一。我们有一支精通于为客户提供互联网解决方案的专家
+					顾问，更有一支专业敬业的技术团队和客服团队，我们专注为客户提供品牌网站定制，营销型网站定制，高端个性化网站定制，B2C/BBC，移动端微信公众账号开
+					发，WEB端软件开发等，为客户打造一个有故事有吸引力有影响力的网站，协助客户更精准的利用互联网工具拓展业务渠道。
+					创业至今，公司已成功为杭州地区近五千余家企业、政府、学校提供完善的电子商务服务，基于社会各界给予开创公司的支持及开创人的共同努力，通过十六年
+					的发展，公司获得了实质性的突破，取得了一个个的成功。我们正迈着坚定的步伐朝着“开创网络，服务未来”的道路稳步前进。
+				</p>
+				<img src="/style/picture/kc_timeline.jpg">
+			</div>
 		</div>
-	</div>
-	<div class="services">
-		<div class="w1200">
-			<p class="mt">我们能为您提供<span>成立于2000年元月/服务江浙沪5000余家企事业单位/专注专业的互联网服务团队</span></p>
-			<ul class="mc">
-				<li class="services_1">
-					<div class="title clearfix">
-						<i></i>
-						<p>高端网站定制开发<span>企业量身定制</span></p>
-					</div>
-					<nav class="clearfix">
+		<div class="services">
+			<div class="w1200">
+				<p class="mt">我们能为您提供<span>成立于2000年元月/服务江浙沪5000余家企事业单位/专注专业的互联网服务团队</span></p>
+				<ul class="mc">
+					<li class="services_1">
+						<div class="title clearfix">
+							<i></i>
+							<p>高端网站定制开发<span>企业量身定制</span></p>
+						</div>
+						<nav class="clearfix">
 							
 							<a href="">集团网站定制</a>
 							
@@ -122,14 +122,14 @@
 							<a href="">企业官网建设</a>
 							
 							<a href="">事业社团网站定制</a>
-											</nav>
-				</li>
-				<li class="services_2">
-					<div class="title clearfix">
-						<i></i>
-						<p>电商与各平台开发<span>更好的去中间环节降低成本</span></p>
-					</div>
-					<nav class="clearfix">
+						</nav>
+					</li>
+					<li class="services_2">
+						<div class="title clearfix">
+							<i></i>
+							<p>电商与各平台开发<span>更好的去中间环节降低成本</span></p>
+						</div>
+						<nav class="clearfix">
 							
 							<a href="">BC电商定制开发</a>
 							
@@ -142,14 +142,14 @@
 							<a href="">金融众筹平台开发</a>
 							
 							<a href="">综合门户定制开发</a>
-											</nav>
-				</li>
-				<li class="services_3">
-					<div class="title clearfix">
-						<i></i>
-						<p>移动智能应用开发<span>加快企业的移动智能应用</span></p>
-					</div>
-					<nav class="clearfix">
+						</nav>
+					</li>
+					<li class="services_3">
+						<div class="title clearfix">
+							<i></i>
+							<p>移动智能应用开发<span>加快企业的移动智能应用</span></p>
+						</div>
+						<nav class="clearfix">
 							
 							<a href="/">自适应网站定制</a>
 							
@@ -162,14 +162,14 @@
 							<a href="">WAP网站开发</a>
 							
 							<a href="">三合一网站定制</a>
-											</nav>
-				</li>
-				<li class="services_4">
-					<div class="title clearfix">
-						<i></i>
-						<p>策略规划解决方案<span>多年的从业经验提供合理化建议</span></p>
-					</div>
-					<nav class="clearfix">
+						</nav>
+					</li>
+					<li class="services_4">
+						<div class="title clearfix">
+							<i></i>
+							<p>策略规划解决方案<span>多年的从业经验提供合理化建议</span></p>
+						</div>
+						<nav class="clearfix">
 							
 							<a href="">互联策略规划</a>
 							
@@ -182,125 +182,147 @@
 							<a href="">网络运营维护</a>
 							
 							<a href="">微信公众号代运营</a>
-											</nav>
-				</li>
-			</ul>
+						</nav>
+					</li>
+				</ul>
+			</div>
 		</div>
-	</div>
-	<div class="team w1200" id="team_list">
-		<p class="mt">我们帮您全程把关<span>平均10年以上的互联网品牌服务经验帮助您梳理需求、给予中肯的建议提供解决方案，全程项目跟进、把控时效与品质</span></p>
-		<div class="box">
-			<ul class="mc list">
-								<li class="clearfix">
-					<div class="img_box">
-						<img src="/style/picture/1487643759912390013.png" alt="袁林荣">
-					</div>
-					<div class="team_info">
-						<p class="name">袁林荣<span>项目策划经理</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-						<p class="desc">十多年网络营销经验服务于杭城上千家大中小企业，特别善于策划如何保持企业品牌形象的同时运用营销技巧，让企业在目标市场占有独特位置。</p>
-					</div>
-				</li>
-								<li class="clearfix">
-					<div class="img_box">
-						<img src="/style/picture/1487813634338558806.jpg" alt="方玮玲">
-					</div>
-					<div class="team_info">
-						<p class="name">方玮玲<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-						<p class="desc">高级产品营销策略讲师，具备熟练的产品营销策划实战及管理经验，曾代表阿里/搜狗等互联网著名公司向中小企业传授及分享互联网产品。</p>
-					</div>
-				</li>
-								<li class="clearfix">
-					<div class="img_box">
-						<img src="/style/picture/1487719590104271283.jpg" alt="金文勇">
-					</div>
-					<div class="team_info">
-						<p class="name">金文勇<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-						<p class="desc">2001年踏入互联网行业，善于与人沟通，做事严谨细心、稳重，把客户当作自己的良师益友，共同进步，共同发展。曾合作过天堂伞. 工联大厦等客户。</p>
-					</div>
-				</li>
-								<li class="clearfix">
-					<div class="img_box">
-						<img src="/style/picture/1487719490765246289.jpg" alt="钟灿">
-					</div>
-					<div class="team_info">
-						<p class="name">钟灿<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-						<p class="desc">2000年从事互联网工作，作为杭州人为杭城数百企业提供网络解决方案，真诚，执着，有一颗热爱工作、热爱生活的心。</p>
-					</div>
-				</li>
-								<li class="clearfix">
-					<div class="img_box">
-						<img src="/style/picture/1487814038271611651.jpg" alt="应洁">
-					</div>
-					<div class="team_info">
-						<p class="name">应洁<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-						<p class="desc">从事网络营销实践近8年，为近百家企业提供全面的网络营销策划方案，善于倾听客户的需求，帮助客户解决问题，为客户打造一个赚钱的网站。</p>
-					</div>
-				</li>
-								<li class="clearfix">
-					<div class="img_box">
-						<img src="/style/picture/1488733270248547256.jpg" alt="王成">
-					</div>
-					<div class="team_info">
-						<p class="name">王成<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-						<p class="desc">从事互联网行业近5年，真诚对待客户，认真聆听客户需求，为客户提供良好的网络策划方案。</p>
-					</div>
-				</li>
-								<li class="clearfix">
-					<div class="img_box">
-						<img src="/style/picture/1490057569548653290.jpg" alt="王旭东">
-					</div>
-					<div class="team_info">
-						<p class="name">王旭东<span>销售顾问</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-						<p class="desc">2012年进入互联网行业，本着真诚对待工作认真负责、乐观上进，已合作几十余家中小型企业，稳定地提高自己的工作能力，与企业同步发展。</p>
-					</div>
-				</li>
-								<li class="clearfix">
-					<div class="img_box">
-						<img src="/style/picture/1490132723596552397.jpg" alt="张力">
-					</div>
-					<div class="team_info">
-						<p class="name">张力<span>销售顾问</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-						<p class="desc">热爱工作，有着扎实的专业知识和丰富的互联网经验，具备快速适应市场能力、主动发现与快速解决问题能力，为杭城客户提供专业的策划和服务。</p>
-					</div>
-				</li>
-								<li class="clearfix">
-					<div class="img_box">
-						<img src="/style/picture/1490133766367006282.jpg" alt="胡晓红">
-					</div>
-					<div class="team_info">
-						<p class="name">胡晓红<span>销售顾问</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-						<p class="desc">2000年进入互联网行业，本着为客户着想，真诚对待客户，善于倾听客户的需求，为客户出谋划策，助力企业有效的利用互联网工具来开辟更广的业务渠道。</p>
-					</div>
-				</li>
-							</ul>
+		<div class="team w1200" id="team_list">
+			<p class="mt">我们帮您全程把关<span>平均10年以上的互联网品牌服务经验帮助您梳理需求、给予中肯的建议提供解决方案，全程项目跟进、把控时效与品质</span></p>
+			<div class="box">
+				<ul class="mc list">
+					<li class="clearfix">
+						<div class="img_box">
+							<img src="/style/picture/1487643759912390013.png" alt="袁林荣">
+						</div>
+						<div class="team_info">
+							<p class="name">袁林荣<span>项目策划经理</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">十多年网络营销经验服务于杭城上千家大中小企业，特别善于策划如何保持企业品牌形象的同时运用营销技巧，让企业在目标市场占有独特位置。</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="img_box">
+							<img src="/style/picture/1487813634338558806.jpg" alt="方玮玲">
+						</div>
+						<div class="team_info">
+							<p class="name">方玮玲<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">高级产品营销策略讲师，具备熟练的产品营销策划实战及管理经验，曾代表阿里/搜狗等互联网著名公司向中小企业传授及分享互联网产品。</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="img_box">
+							<img src="/style/picture/1487719590104271283.jpg" alt="金文勇">
+						</div>
+						<div class="team_info">
+							<p class="name">金文勇<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">2001年踏入互联网行业，善于与人沟通，做事严谨细心、稳重，把客户当作自己的良师益友，共同进步，共同发展。曾合作过天堂伞. 工联大厦等客户。</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="img_box">
+							<img src="/style/picture/1487719490765246289.jpg" alt="钟灿">
+						</div>
+						<div class="team_info">
+							<p class="name">钟灿<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">2000年从事互联网工作，作为杭州人为杭城数百企业提供网络解决方案，真诚，执着，有一颗热爱工作、热爱生活的心。</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="img_box">
+							<img src="/style/picture/1487814038271611651.jpg" alt="应洁">
+						</div>
+						<div class="team_info">
+							<p class="name">应洁<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">从事网络营销实践近8年，为近百家企业提供全面的网络营销策划方案，善于倾听客户的需求，帮助客户解决问题，为客户打造一个赚钱的网站。</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="img_box">
+							<img src="/style/picture/1488733270248547256.jpg" alt="王成">
+						</div>
+						<div class="team_info">
+							<p class="name">王成<span>项目策划</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">从事互联网行业近5年，真诚对待客户，认真聆听客户需求，为客户提供良好的网络策划方案。</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="img_box">
+							<img src="/style/picture/1490057569548653290.jpg" alt="王旭东">
+						</div>
+						<div class="team_info">
+							<p class="name">王旭东<span>销售顾问</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">2012年进入互联网行业，本着真诚对待工作认真负责、乐观上进，已合作几十余家中小型企业，稳定地提高自己的工作能力，与企业同步发展。</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="img_box">
+							<img src="/style/picture/1490132723596552397.jpg" alt="张力">
+						</div>
+						<div class="team_info">
+							<p class="name">张力<span>销售顾问</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">热爱工作，有着扎实的专业知识和丰富的互联网经验，具备快速适应市场能力、主动发现与快速解决问题能力，为杭城客户提供专业的策划和服务。</p>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="img_box">
+							<img src="/style/picture/1490133766367006282.jpg" alt="胡晓红">
+						</div>
+						<div class="team_info">
+							<p class="name">胡晓红<span>销售顾问</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">2000年进入互联网行业，本着为客户着想，真诚对待客户，善于倾听客户的需求，为客户出谋划策，助力企业有效的利用互联网工具来开辟更广的业务渠道。</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
 		</div>
-	
-	
-	</div>
-	<div class="friend">
-		<p class="mt">合作伙伴<span>17年的稳步发展开创获得社会各方的肯定和多家互联网龙头企业成为合作伙伴共同发展</span></p>
-		<img src="/style/picture/about_friend.jpg">
-	</div>
-	<div class="about_news w1200">
-		<p class="mt">开创动态<span>认真的工作尽情的玩乐这里记录了开创的点点滴滴</span></p>
-		<div class="mc clearfix">
-			<div class="pic_news">
-				<ul class="home_ad">
+		<div class="friend">
+			<p class="mt">合作伙伴<span>17年的稳步发展开创获得社会各方的肯定和多家互联网龙头企业成为合作伙伴共同发展</span></p>
+			<img src="/style/picture/about_friend.jpg">
+		</div>
+		<div class="about_news w1200">
+			<p class="mt">开创动态<span>认真的工作尽情的玩乐这里记录了开创的点点滴滴</span></p>
+			<div class="mc clearfix">
+				<div class="pic_news">
+					<ul class="home_ad">
 						
-					<a href="/article.php?id=66"><img src="/style/picture/1491455086292439059.jpg"></a>
+						<a href="/article.php?id=66"><img src="/style/picture/1491455086292439059.jpg"></a>
 						
-					<a href="/article.php?id=68"><img src="/style/picture/1491453977682106113.jpg"></a>
-									</ul>
+						<a href="/article.php?id=68"><img src="/style/picture/1491453977682106113.jpg"></a>
+					</ul>
+					<ul class="article_news">
+
+						<li class="tp-follow-news yidong-news">
+							<div class="follow-news-time">
+								<p class="news-time-day"><?php echo toDate($news_list[0]['createtime'],'d'); ?></p>
+								<p class="news-time-month"><?php echo toDate($news_list[0]['createtime'],'Y-m'); ?></p>
+							</div>
+							<div class="follow-news-txt">
+								<p class="news-txt-tit"><a target="_blank" href=""><?php echo $news_list[0]['title']; ?></a></p>
+								<p class="news-txt-con"><?php echo $news_list[0]['description']; ?></p>
+								<p class="news-txt-icon">
+									<a href="<?php echo url('home/article/info',array('id'=>$news_list[0]['id'],'catId'=>$news_list[0]['catid'])); ?>" target="_blank" title="阅读全文">
+										<i class="icon-angle-right"></i>
+									</a>
+								</p>
+							</div>
+						</li>
+						
+					</ul>
+					<a href="/home/article/index/catId/15.html" class="read_more">Read&nbsp;&nbsp;More<i></i></a>
+				</div>
 				<ul class="article_news">
+					<?php if(is_array($news_list) || $news_list instanceof \think\Collection || $news_list instanceof \think\Paginator): $i = 0;$__LIST__ = is_array($news_list) ? array_slice($news_list,1,3, true) : $news_list->slice(1,3, true); if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
 					
 					<li class="tp-follow-news yidong-news">
 						<div class="follow-news-time">
-							<p class="news-time-day">12</p>
-							<p class="news-time-month">2016-10</p>
+							<p class="news-time-day"><?php echo toDate($vo['createtime'],'d'); ?></p>
+							<p class="news-time-month"><?php echo toDate($vo['createtime'],'Y-m'); ?></p>
 						</div>
 						<div class="follow-news-txt">
-							<p class="news-txt-tit"><a target="_blank" href="">关于杭州市网站公安备案公告</a></p>
-							<p class="news-txt-con">依据《计算机信息网络国际联网安全保护管理办法》第十二条、《杭州市计算机信息网络安全保护管理条例》第十七条之规定：各网站在工信部备案成功后，需在网站开通之日起30日内到公司实际经营地或个人常住地公安机关履行公安备案手续。</p>
+							<p class="news-txt-tit"><a target="_blank" href=""><?php echo $vo['title']; ?></a></p>
+							<p class="news-txt-con"><?php echo $vo['description']; ?>!</p>
 							<p class="news-txt-icon">
 								<a href="" target="_blank" title="阅读全文">
 									<i class="icon-angle-right"></i>
@@ -308,72 +330,16 @@
 							</p>
 						</div>
 					</li>
-						
+					<?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
-				<a href="" class="read_more">Read&nbsp;&nbsp;More<i></i></a>
 			</div>
-			<ul class="article_news">
-			
-			
-				
-					
-				<li class="tp-follow-news yidong-news">
-					<div class="follow-news-time">
-						<p class="news-time-day">11</p>
-						<p class="news-time-month">2017-09</p>
-					</div>
-					<div class="follow-news-txt">
-						<p class="news-txt-tit"><a target="_blank" href="">“杭州浪浪浪水公园”体验一夏</a></p>
-						<p class="news-txt-con">炎炎夏日，不想只待在空调房里虚度时光，最好的选择当然还是和小伙伴同事们约上一起去水上乐园疯狂玩水，清凉又刺激，简直是我们上班族释放压力的好去处!</p>
-						<p class="news-txt-icon">
-							<a href="" target="_blank" title="阅读全文">
-								<i class="icon-angle-right"></i>
-							</a>
-						</p>
-					</div>
-				</li>
-					
-				<li class="tp-follow-news yidong-news">
-					<div class="follow-news-time">
-						<p class="news-time-day">01</p>
-						<p class="news-time-month">2017-06</p>
-					</div>
-					<div class="follow-news-txt">
-						<p class="news-txt-tit"><a target="_blank" href="/article.php?id=70">建德采大洋枇杷、赏三江美景、捕江中鱼鲜</a></p>
-						<p class="news-txt-con">这里依山傍水，风景秀丽，空气清纯，果树成林，以幢幢青瓦的居民楼掩映在绿树丛中，整个村落异常清爽、整洁，颇有“有家皆掩映，无处不潺缓，好树鸣幽鸟，晴楼入野烟”的意境。</p>
-						<p class="news-txt-icon">
-							<a href="" target="_blank" title="阅读全文">
-								<i class="icon-angle-right"></i>
-							</a>
-						</p>
-					</div>
-				</li>
-					
-				<li class="tp-follow-news yidong-news">
-					<div class="follow-news-time">
-						<p class="news-time-day">29</p>
-						<p class="news-time-month">2017-03</p>
-					</div>
-					<div class="follow-news-txt">
-						<p class="news-txt-tit"><a target="_blank" href="">秀山美地农庄一日游</a></p>
-						<p class="news-txt-con">周围是一片秀美的田园山水风光，阡陌交通，田畴纵横，植被茂密，既有“暖暖远人村，依依墟里烟”的写意。</p>
-						<p class="news-txt-icon">
-							<a href="" target="_blank" title="阅读全文">
-								<i class="icon-angle-right"></i>
-							</a>
-						</p>
-					</div>
-				</li>
-									
-			</ul>
 		</div>
 	</div>
-</div>
 
- 
-<script type="text/javascript" src="/style/js/jquery.cxscroll.js"></script>
-<script>$("#team_list").cxScroll();</script>
-<div id="footer">
+
+	<script type="text/javascript" src="/style/js/jquery.cxscroll.js"></script>
+	<script>$("#team_list").cxScroll();</script>
+	<div id="footer">
 	<ul class="honor w1200">
 		<li class="honor1">
 			<i></i>
