@@ -214,46 +214,23 @@
 		<ul class="mc w1200">
 			
 			 	
-			{clt:list_join db='project' dbfield='catid' id='vo' key='k' joindb='category' joinfield='id' where='catid=16 and pstatus=1'  order="createtime desc" limit='4'}
+			{volist name="$project" id="vo" key="k"}
 			<li {if condition="($k+1)%2 == 0"}class="mr_0"{/if}>
 				<p class="state">进行中</p>
 				<p class="title">{$vo.title}</p>
 				<p class="desc">项目简述：{$vo.description}</p>
 				<div class="author">
-					{switch name="$k" }
-					    {case value="0" break="0或1"}
-					    	<img src="/style/picture/1487643759912390013.png" alt="袁林荣">
-							<div class="author_main">
-								<p class="name">袁林荣<span>项目策划经理</span></p>
-								<p class="profile">十多年网络营销经验服务于杭城上千家大中小企业，特别善于策划如何保持企业品牌形象的同时运用营销技巧，让企业在目标市场占有独特位置。</p>
-							</div>
-					    {/case}
-					    {case value="1"}
-							<img src="/style/picture/1487814038271611651.jpg" alt="应洁">
-							<div class="author_main">
-								<p class="name">应洁<span>项目策划</span></p>
-								<p class="profile">从事网络营销实践近8年，为近百家企业提供全面的网络营销策划方案，善于倾听客户的需求，帮助客户解决问题，为客户打造一个赚钱的网站。</p>
-							</div>
-					    {/case}
-					    {case value="2"}
-							<img src="/style/picture/1487719590104271283.jpg" alt="金文勇">
-							<div class="author_main">
-								<p class="name">金文勇<span>项目策划</span></p>
-								<p class="profile">2001年踏入互联网行业，善于与人沟通，做事严谨细心、稳重，把客户当作自己的良师益友，共同进步，共同发展。曾合作过天堂伞. 工联大厦等客户。</p>
-							</div>
-					    {/case}
-					    {default /}
-							<img src="/style/picture/1487813634338558806.jpg" alt="方玮玲">
-							<div class="author_main">
-								<p class="name">方玮玲<span>项目策划</span></p>
-								<p class="profile">高级产品营销策略讲师，具备熟练的产品营销策划实战及管理经验，曾代表阿里/搜狗等互联网著名公司向中小企业传授及分享互联网产品。</p>
-							</div>
-					{/switch}
+					
+					<img src="/public{$vo['leader']['avatar']}" alt="袁林荣">
+					<div class="author_main">
+						<p class="name">{$vo['leader']['title']}<span>{$vo['leader']['position']}</span></p>
+						<p class="profile">{$vo['leader']['info']}</p>
+					</div>
 
-					<a class="consultation" href="tencent://message/?uin=723788021&Site=小桔网络&Menu=yes" target="_blank">立即咨询</a><a class="get_programme" href="tencent://message/?uin=723788021&Site=小桔网络&Menu=yes" target="_blank">具体方案</a>
+					<a class="consultation" href="tencent://message/?uin={$vo['leader']['qq']}&Site=小桔网络&Menu=yes" target="_blank">立即咨询</a><a class="get_programme" href="tencent://message/?uin={$vo['leader']['qq']}&Site=小桔网络&Menu=yes" target="_blank">具体方案</a>
 				</div>
 			</li>
-			{/clt:list_join}
+			{/volist}
 		</ul>
 	</div>
 	<div class="customer">

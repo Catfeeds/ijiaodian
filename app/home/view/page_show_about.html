@@ -116,16 +116,20 @@
 			<p class="mt">我们帮您全程把关<span>平均10年以上的互联网品牌服务经验帮助您梳理需求、给予中肯的建议提供解决方案，全程项目跟进、把控时效与品质</span></p>
 			<div class="box">
 				<ul class="mc list">
+					{clt:list_join db='team' dbfield='catid' id='vo' joindb='category' where="catid=14" joinfield='id'  order="listorder asc,createtime desc" limit='12'}
+
+
 					<li class="clearfix">
 						<div class="img_box">
-							<img src="/style/picture/1487643759912390013.png" alt="袁林荣">
+							<img src="/public{$vo['avatar']}" alt="{$vo['avatar']}">
 						</div>
 						<div class="team_info">
-							<p class="name">袁林荣<span>项目策划经理</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
-							<p class="desc">十多年网络营销经验服务于杭城上千家大中小企业，特别善于策划如何保持企业品牌形象的同时运用营销技巧，让企业在目标市场占有独特位置。</p>
+							<p class="name">{$vo['title']}<span>{$vo['position']}</span><a href="http://wpa.qq.com/msgrd?v=3&uin={$vo['qq']}&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
+							<p class="desc">{$vo['info']}</p>
 						</div>
 					</li>
-					<li class="clearfix">
+					{/clt:list_join}
+					<!-- <li class="clearfix">
 						<div class="img_box">
 							<img src="/style/picture/1487813634338558806.jpg" alt="方玮玲">
 						</div>
@@ -196,7 +200,7 @@
 							<p class="name">胡晓红<span>销售顾问</span><a href="http://wpa.qq.com/msgrd?v=3&uin=723788021&site=www.ijiaodian,cn&menu=yes">立即咨询</a></p>
 							<p class="desc">2000年进入互联网行业，本着为客户着想，真诚对待客户，善于倾听客户的需求，为客户出谋划策，助力企业有效的利用互联网工具来开辟更广的业务渠道。</p>
 						</div>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 

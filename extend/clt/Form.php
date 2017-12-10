@@ -549,23 +549,24 @@ class Form{
         $setup = $info['setup'];
         $id = $field = $info['field'];
         $validate = getvalidate($info);
-        $list = db($setup['sql'])->select();
-        var_dump($list);
+        $list = db($setup['table'])->select();
+        $value = $value ? $value : $this->data[$field];
+        // var_dump($value);
         $parseStr = '<select id="'.$id.'" name="'.$field.'"  class="'.$info['class'].'" '.$validate.'>';
         if(is_array($list)) {
             foreach($list as $key => $val) {
                 if(!empty($value)){
                     $selected='';
                     if(is_array($value)){
-                        if(in_array($key,$value)){
+                        if(in_array($val[$setup['key']],$value)){
                             $selected = ' selected="selected"';
                         }
                     }else{
-                        if($value==$key){
+                        if($value==$val[$setup['key']]){
                             $selected = ' selected="selected"';
                         }
                     }
-                    $parseStr   .= '<option '.$selected.' value="'.$key.'">'.$val.'</option>';
+                    $parseStr   .= '<option '.$selected.' value="'.$val[$setup['key']].'">'.$val[$setup['value']].'</option>';
                 }else{
                     $parseStr   .= '<option value="'.$val[$setup['key']].'">'.$val[$setup['value']].'</option>';
                 }
