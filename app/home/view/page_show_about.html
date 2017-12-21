@@ -1,5 +1,11 @@
 {include file="common/head"/}
 <link href="/style/css/about.css" rel="stylesheet">
+<style>
+	#about_kc .banner .banner_icon li{
+		width: 20%;
+		margin: 0;
+	}
+</style>
 <div id="about_kc">
 	<div class="banner">
 		<div class="w1200">
@@ -10,6 +16,8 @@
 					<li><i class="about_title_icon1"></i>网站建设</li>
 					<li><i class="about_title_icon2"></i>电商平台</li>
 					<li><i class="about_title_icon3"></i>微信开发</li>
+					<li><i class="about_title_icon1"></i>网站建设</li>
+					<li><i class="about_title_icon2"></i>电商平台</li>
 				</ul>
 			</div>
 		</div>
@@ -215,10 +223,9 @@
 			<div class="mc clearfix">
 				<div class="pic_news">
 					<ul class="home_ad">
-						
-						<a href="/article.php?id=66"><img src="/style/picture/1491455086292439059.jpg"></a>
-						
-						<a href="/article.php?id=68"><img src="/style/picture/1491453977682106113.jpg"></a>
+						{volist name="$banner_news" id="vo" key="k"}
+							<a href="{:url('home/article/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}"><img src="/public{$vo['thumb']}"></a>
+						{/volist}
 					</ul>
 					<ul class="article_news">
 

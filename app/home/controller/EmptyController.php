@@ -28,6 +28,9 @@ class EmptyController extends Common{
 				
             }
 
+            $banner_news = db('article')->where(array('catid'=>15,'posid'=>6))->order('createtime desc')->limit(4)->select();
+            $this->assign('banner_news',$banner_news);
+
             //最新四篇文章
             $news_list = db('article')->where(array('catid'=>15))->order('createtime desc')->limit(4)->select();
             $this->assign('news_list',$news_list);
